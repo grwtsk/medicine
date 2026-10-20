@@ -1,0 +1,5136 @@
+{
+  "cases": [
+    {
+      "expected": {
+        "checkpoints": [
+          {
+            "after_event_id": "w01.e02",
+            "id": "w01.cp01",
+            "projection": {
+              "challenge_id": "w01.challenge",
+              "message": "Review the written draft before submitting it. Saving or inspecting does not submit it.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "unavailable",
+                "current_response_timing": "unconfirmed",
+                "current_review_accepted": false,
+                "current_review_recorded": false,
+                "current_revision_id": null,
+                "draft_revision_id": "w01.r1",
+                "inspected_draft_revision_id": "w01.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": false,
+                "submission_attempts": [],
+                "submitted_revision_ids": [],
+                "tick": 1,
+                "written_route_available": true
+              },
+              "surface": "draft",
+              "text_entries": [
+                {
+                  "entry_id": "w01.r1",
+                  "kind": "challenge_revision",
+                  "revision_id": "w01.r1",
+                  "text": "Please review premise-alpha before proposed-step-alpha.",
+                  "tick": 0
+                }
+              ],
+              "transcript_event_ids": []
+            },
+            "state": {
+              "accepted_review_revision_ids": [],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "unavailable",
+              "current_response_timing": "unconfirmed",
+              "current_review_accepted": false,
+              "current_review_recorded": false,
+              "current_revision_id": null,
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w01.r1",
+                  "text": "Please review premise-alpha before proposed-step-alpha.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w01.r1",
+              "inspected_draft_revision_id": "w01.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [],
+              "response_target_elapsed": false,
+              "review_records": [],
+              "submission_attempts": [],
+              "submitted_revision_ids": [],
+              "tick": 1,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w01.e04",
+            "id": "w01.cp02",
+            "projection": {
+              "challenge_id": "w01.challenge",
+              "message": "Inspect the separate submission, review, response, and resolution states below. No downstream action is authorized.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "unavailable",
+                "current_response_timing": "unconfirmed",
+                "current_review_accepted": false,
+                "current_review_recorded": false,
+                "current_revision_id": null,
+                "draft_revision_id": "w01.r1",
+                "inspected_draft_revision_id": "w01.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": false,
+                "submission_attempts": [],
+                "submitted_revision_ids": [],
+                "tick": 3,
+                "written_route_available": true
+              },
+              "surface": "status",
+              "text_entries": [],
+              "transcript_event_ids": []
+            },
+            "state": {
+              "accepted_review_revision_ids": [],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "unavailable",
+              "current_response_timing": "unconfirmed",
+              "current_review_accepted": false,
+              "current_review_recorded": false,
+              "current_revision_id": null,
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w01.r1",
+                  "text": "Please review premise-alpha before proposed-step-alpha.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w01.r1",
+              "inspected_draft_revision_id": "w01.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [],
+              "response_target_elapsed": false,
+              "review_records": [],
+              "submission_attempts": [],
+              "submitted_revision_ids": [],
+              "tick": 3,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w01.e10",
+            "id": "w01.cp03",
+            "projection": {
+              "challenge_id": "w01.challenge",
+              "message": "Inspect the separate submission, review, response, and resolution states below. No downstream action is authorized.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w01.r1"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "by_target",
+                "current_review_accepted": true,
+                "current_review_recorded": true,
+                "current_revision_id": "w01.r1",
+                "draft_revision_id": "w01.r1",
+                "inspected_draft_revision_id": "w01.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [
+                  "w01.r1"
+                ],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": false,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w01.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w01.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w01.r1"
+                ],
+                "tick": 10,
+                "written_route_available": true
+              },
+              "surface": "status",
+              "text_entries": [],
+              "transcript_event_ids": []
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w01.r1"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "by_target",
+              "current_review_accepted": true,
+              "current_review_recorded": true,
+              "current_revision_id": "w01.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w01.r1",
+                  "text": "Please review premise-alpha before proposed-step-alpha.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w01.r1",
+              "inspected_draft_revision_id": "w01.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [
+                "w01.r1"
+              ],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [
+                {
+                  "record_id": "w01.b1",
+                  "revision_id": "w01.r1",
+                  "text": "Written response: the supplied premise can be challenged; no action is authorized.",
+                  "tick": 10
+                }
+              ],
+              "response_target_elapsed": false,
+              "review_records": [
+                {
+                  "record_id": "w01.v1",
+                  "revision_id": "w01.r1",
+                  "text": "Review note for revision-one: premise-alpha remains open to correction.",
+                  "tick": 8
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w01.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w01.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w01.r1"
+              ],
+              "tick": 10,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w01.e12",
+            "id": "w01.cp04",
+            "projection": {
+              "challenge_id": "w01.challenge",
+              "message": "Inspect the separate submission, review, response, and resolution states below. No downstream action is authorized.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w01.r1"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "recorded",
+                "current_resolution_timing": "by_target",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "by_target",
+                "current_review_accepted": true,
+                "current_review_recorded": true,
+                "current_revision_id": "w01.r1",
+                "draft_revision_id": "w01.r1",
+                "inspected_draft_revision_id": "w01.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [
+                  "w01.r1"
+                ],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": true,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w01.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w01.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w01.r1"
+                ],
+                "tick": 20,
+                "written_route_available": true
+              },
+              "surface": "status",
+              "text_entries": [],
+              "transcript_event_ids": []
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w01.r1"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "recorded",
+              "current_resolution_timing": "by_target",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "by_target",
+              "current_review_accepted": true,
+              "current_review_recorded": true,
+              "current_revision_id": "w01.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w01.r1",
+                  "text": "Please review premise-alpha before proposed-step-alpha.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w01.r1",
+              "inspected_draft_revision_id": "w01.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [
+                "w01.r1"
+              ],
+              "resolution_proposals": [
+                {
+                  "record_id": "w01.p1",
+                  "revision_id": "w01.r1",
+                  "text": "Proposed resolution: record the response to request-alpha for review.",
+                  "tick": 18
+                }
+              ],
+              "resolution_records": [
+                {
+                  "record_id": "w01.z1",
+                  "review_record_id": "w01.v1",
+                  "revision_id": "w01.r1",
+                  "text": "Synthetic resolution record for this challenge revision only.",
+                  "tick": 20
+                }
+              ],
+              "resolution_target_elapsed": false,
+              "response_records": [
+                {
+                  "record_id": "w01.b1",
+                  "revision_id": "w01.r1",
+                  "text": "Written response: the supplied premise can be challenged; no action is authorized.",
+                  "tick": 10
+                }
+              ],
+              "response_target_elapsed": true,
+              "review_records": [
+                {
+                  "record_id": "w01.v1",
+                  "revision_id": "w01.r1",
+                  "text": "Review note for revision-one: premise-alpha remains open to correction.",
+                  "tick": 8
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w01.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w01.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w01.r1"
+              ],
+              "tick": 20,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w01.e14",
+            "id": "w01.cp05",
+            "projection": {
+              "challenge_id": "w01.challenge",
+              "message": "This transcript contains the declared written history and status. It does not include internal context.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w01.r1"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "recorded",
+                "current_resolution_timing": "by_target",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "by_target",
+                "current_review_accepted": true,
+                "current_review_recorded": true,
+                "current_revision_id": "w01.r1",
+                "draft_revision_id": "w01.r1",
+                "inspected_draft_revision_id": "w01.r1",
+                "participant_position": "disputed",
+                "requested_review_revision_ids": [
+                  "w01.r1"
+                ],
+                "resolution_target_elapsed": true,
+                "response_target_elapsed": true,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w01.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w01.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w01.r1"
+                ],
+                "tick": 22,
+                "written_route_available": true
+              },
+              "surface": "export",
+              "text_entries": [
+                {
+                  "entry_id": "w01.r1",
+                  "kind": "challenge_revision",
+                  "revision_id": "w01.r1",
+                  "text": "Please review premise-alpha before proposed-step-alpha.",
+                  "tick": 0
+                },
+                {
+                  "entry_id": "w01.v1",
+                  "kind": "review",
+                  "revision_id": "w01.r1",
+                  "text": "Review note for revision-one: premise-alpha remains open to correction.",
+                  "tick": 8
+                },
+                {
+                  "entry_id": "w01.b1",
+                  "kind": "response",
+                  "revision_id": "w01.r1",
+                  "text": "Written response: the supplied premise can be challenged; no action is authorized.",
+                  "tick": 10
+                },
+                {
+                  "entry_id": "w01.p1",
+                  "kind": "resolution_proposal",
+                  "revision_id": "w01.r1",
+                  "text": "Proposed resolution: record the response to request-alpha for review.",
+                  "tick": 18
+                },
+                {
+                  "entry_id": "w01.z1",
+                  "kind": "resolution",
+                  "revision_id": "w01.r1",
+                  "text": "Synthetic resolution record for this challenge revision only.",
+                  "tick": 20
+                },
+                {
+                  "entry_id": "w01.d1",
+                  "kind": "disagreement",
+                  "revision_id": "w01.r1",
+                  "text": "I disagree with premise-alpha and want another written review.",
+                  "tick": 21
+                }
+              ],
+              "transcript_event_ids": [
+                "w01.e01",
+                "w01.e02",
+                "w01.e03",
+                "w01.e04",
+                "w01.e05",
+                "w01.e06",
+                "w01.e07",
+                "w01.e08",
+                "w01.e09",
+                "w01.e10",
+                "w01.e11",
+                "w01.e12",
+                "w01.e13",
+                "w01.e14"
+              ]
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w01.r1"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "recorded",
+              "current_resolution_timing": "by_target",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "by_target",
+              "current_review_accepted": true,
+              "current_review_recorded": true,
+              "current_revision_id": "w01.r1",
+              "disagreements": [
+                {
+                  "record_id": "w01.d1",
+                  "revision_id": "w01.r1",
+                  "text": "I disagree with premise-alpha and want another written review.",
+                  "tick": 21
+                }
+              ],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w01.r1",
+                  "text": "Please review premise-alpha before proposed-step-alpha.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w01.r1",
+              "inspected_draft_revision_id": "w01.r1",
+              "participant_position": "disputed",
+              "requested_review_revision_ids": [
+                "w01.r1"
+              ],
+              "resolution_proposals": [
+                {
+                  "record_id": "w01.p1",
+                  "revision_id": "w01.r1",
+                  "text": "Proposed resolution: record the response to request-alpha for review.",
+                  "tick": 18
+                }
+              ],
+              "resolution_records": [
+                {
+                  "record_id": "w01.z1",
+                  "review_record_id": "w01.v1",
+                  "revision_id": "w01.r1",
+                  "text": "Synthetic resolution record for this challenge revision only.",
+                  "tick": 20
+                }
+              ],
+              "resolution_target_elapsed": true,
+              "response_records": [
+                {
+                  "record_id": "w01.b1",
+                  "revision_id": "w01.r1",
+                  "text": "Written response: the supplied premise can be challenged; no action is authorized.",
+                  "tick": 10
+                }
+              ],
+              "response_target_elapsed": true,
+              "review_records": [
+                {
+                  "record_id": "w01.v1",
+                  "revision_id": "w01.r1",
+                  "text": "Review note for revision-one: premise-alpha remains open to correction.",
+                  "tick": 8
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w01.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w01.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w01.r1"
+              ],
+              "tick": 22,
+              "written_route_available": true
+            }
+          }
+        ],
+        "event_outcomes": [
+          {
+            "error_code": null,
+            "event_id": "w01.e01",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w01.e02",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w01.e03",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w01.e04",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w01.e05",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w01.e06",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w01.e07",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w01.e08",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w01.e09",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w01.e10",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w01.e11",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w01.e12",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w01.e13",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w01.e14",
+            "outcome": "accepted"
+          }
+        ]
+      },
+      "id": "w01.base",
+      "transcript": {
+        "byte_count": 2078,
+        "input_id": "w01.base.transcript",
+        "sha256": "ad8d764a80ebffde70b7b5dbd6548e125ae998a6630ccd285b6fdff541718aab"
+      }
+    },
+    {
+      "expected": {
+        "checkpoints": [
+          {
+            "after_event_id": "w02.e07",
+            "id": "w02.cp01",
+            "projection": {
+              "challenge_id": "w02.challenge",
+              "message": "Inspect the separate submission, review, response, and resolution states below. No downstream action is authorized.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w02.r1"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "by_target",
+                "current_review_accepted": true,
+                "current_review_recorded": true,
+                "current_revision_id": "w02.r1",
+                "draft_revision_id": "w02.r1",
+                "inspected_draft_revision_id": "w02.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": false,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w02.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w02.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w02.r1"
+                ],
+                "tick": 8,
+                "written_route_available": true
+              },
+              "surface": "status",
+              "text_entries": [],
+              "transcript_event_ids": []
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w02.r1"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "by_target",
+              "current_review_accepted": true,
+              "current_review_recorded": true,
+              "current_revision_id": "w02.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w02.r1",
+                  "text": "Please review premise-alpha.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w02.r1",
+              "inspected_draft_revision_id": "w02.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [
+                {
+                  "record_id": "w02.b1",
+                  "revision_id": "w02.r1",
+                  "text": "Response to revision-one only.",
+                  "tick": 8
+                }
+              ],
+              "response_target_elapsed": false,
+              "review_records": [
+                {
+                  "record_id": "w02.v1",
+                  "revision_id": "w02.r1",
+                  "text": "Reviewed the first submitted text.",
+                  "tick": 5
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w02.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w02.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w02.r1"
+              ],
+              "tick": 8,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w02.e08",
+            "id": "w02.cp02",
+            "projection": {
+              "challenge_id": "w02.challenge",
+              "message": "Review the written draft before submitting it. Saving or inspecting does not submit it.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w02.r1"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "by_target",
+                "current_review_accepted": true,
+                "current_review_recorded": true,
+                "current_revision_id": "w02.r1",
+                "draft_revision_id": "w02.r2",
+                "inspected_draft_revision_id": "w02.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": true,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w02.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w02.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w02.r1"
+                ],
+                "tick": 11,
+                "written_route_available": true
+              },
+              "surface": "draft",
+              "text_entries": [
+                {
+                  "entry_id": "w02.r2",
+                  "kind": "challenge_revision",
+                  "revision_id": "w02.r2",
+                  "text": "Correction: premise-alpha should read premise-beta.",
+                  "tick": 11
+                }
+              ],
+              "transcript_event_ids": []
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w02.r1"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "by_target",
+              "current_review_accepted": true,
+              "current_review_recorded": true,
+              "current_revision_id": "w02.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w02.r1",
+                  "text": "Please review premise-alpha.",
+                  "tick": 0
+                },
+                {
+                  "predecessor_revision_id": "w02.r1",
+                  "revision_id": "w02.r2",
+                  "text": "Correction: premise-alpha should read premise-beta.",
+                  "tick": 11
+                }
+              ],
+              "draft_revision_id": "w02.r2",
+              "inspected_draft_revision_id": "w02.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [
+                {
+                  "record_id": "w02.b1",
+                  "revision_id": "w02.r1",
+                  "text": "Response to revision-one only.",
+                  "tick": 8
+                }
+              ],
+              "response_target_elapsed": true,
+              "review_records": [
+                {
+                  "record_id": "w02.v1",
+                  "revision_id": "w02.r1",
+                  "text": "Reviewed the first submitted text.",
+                  "tick": 5
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w02.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w02.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w02.r1"
+              ],
+              "tick": 11,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w02.e11",
+            "id": "w02.cp03",
+            "projection": {
+              "challenge_id": "w02.challenge",
+              "message": "Inspect the separate submission, review, response, and resolution states below. No downstream action is authorized.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w02.r1"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "unavailable",
+                "current_response_timing": "unconfirmed",
+                "current_review_accepted": false,
+                "current_review_recorded": false,
+                "current_revision_id": "w02.r2",
+                "draft_revision_id": "w02.r2",
+                "inspected_draft_revision_id": "w02.r2",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": true,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w02.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w02.r1"
+                  },
+                  {
+                    "attempt_id": "w02.a2",
+                    "confirmation": "recorded",
+                    "revision_id": "w02.r2"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w02.r1",
+                  "w02.r2"
+                ],
+                "tick": 14,
+                "written_route_available": true
+              },
+              "surface": "status",
+              "text_entries": [],
+              "transcript_event_ids": []
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w02.r1"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "unavailable",
+              "current_response_timing": "unconfirmed",
+              "current_review_accepted": false,
+              "current_review_recorded": false,
+              "current_revision_id": "w02.r2",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w02.r1",
+                  "text": "Please review premise-alpha.",
+                  "tick": 0
+                },
+                {
+                  "predecessor_revision_id": "w02.r1",
+                  "revision_id": "w02.r2",
+                  "text": "Correction: premise-alpha should read premise-beta.",
+                  "tick": 11
+                }
+              ],
+              "draft_revision_id": "w02.r2",
+              "inspected_draft_revision_id": "w02.r2",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [
+                {
+                  "record_id": "w02.b1",
+                  "revision_id": "w02.r1",
+                  "text": "Response to revision-one only.",
+                  "tick": 8
+                }
+              ],
+              "response_target_elapsed": true,
+              "review_records": [
+                {
+                  "record_id": "w02.v1",
+                  "revision_id": "w02.r1",
+                  "text": "Reviewed the first submitted text.",
+                  "tick": 5
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w02.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w02.r1"
+                },
+                {
+                  "attempt_id": "w02.a2",
+                  "confirmation": "recorded",
+                  "revision_id": "w02.r2"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w02.r1",
+                "w02.r2"
+              ],
+              "tick": 14,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w02.e12",
+            "id": "w02.cp04",
+            "projection": {
+              "challenge_id": "w02.challenge",
+              "message": "This resolution attempt refers to an earlier revision. A resolution record must name the current submitted revision and its own review.",
+              "public_code": "revision_not_current",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w02.r1"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "unavailable",
+                "current_response_timing": "unconfirmed",
+                "current_review_accepted": false,
+                "current_review_recorded": false,
+                "current_revision_id": "w02.r2",
+                "draft_revision_id": "w02.r2",
+                "inspected_draft_revision_id": "w02.r2",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": true,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w02.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w02.r1"
+                  },
+                  {
+                    "attempt_id": "w02.a2",
+                    "confirmation": "recorded",
+                    "revision_id": "w02.r2"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w02.r1",
+                  "w02.r2"
+                ],
+                "tick": 15,
+                "written_route_available": true
+              },
+              "surface": "error",
+              "text_entries": [],
+              "transcript_event_ids": []
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w02.r1"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "unavailable",
+              "current_response_timing": "unconfirmed",
+              "current_review_accepted": false,
+              "current_review_recorded": false,
+              "current_revision_id": "w02.r2",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w02.r1",
+                  "text": "Please review premise-alpha.",
+                  "tick": 0
+                },
+                {
+                  "predecessor_revision_id": "w02.r1",
+                  "revision_id": "w02.r2",
+                  "text": "Correction: premise-alpha should read premise-beta.",
+                  "tick": 11
+                }
+              ],
+              "draft_revision_id": "w02.r2",
+              "inspected_draft_revision_id": "w02.r2",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [
+                {
+                  "record_id": "w02.b1",
+                  "revision_id": "w02.r1",
+                  "text": "Response to revision-one only.",
+                  "tick": 8
+                }
+              ],
+              "response_target_elapsed": true,
+              "review_records": [
+                {
+                  "record_id": "w02.v1",
+                  "revision_id": "w02.r1",
+                  "text": "Reviewed the first submitted text.",
+                  "tick": 5
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w02.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w02.r1"
+                },
+                {
+                  "attempt_id": "w02.a2",
+                  "confirmation": "recorded",
+                  "revision_id": "w02.r2"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w02.r1",
+                "w02.r2"
+              ],
+              "tick": 15,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w02.e13",
+            "id": "w02.cp05",
+            "projection": {
+              "challenge_id": "w02.challenge",
+              "message": "Your retained written revisions and responses appear in order. Earlier revisions remain distinguishable from current submitted work.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w02.r1"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "unavailable",
+                "current_response_timing": "unconfirmed",
+                "current_review_accepted": false,
+                "current_review_recorded": false,
+                "current_revision_id": "w02.r2",
+                "draft_revision_id": "w02.r2",
+                "inspected_draft_revision_id": "w02.r2",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": true,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w02.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w02.r1"
+                  },
+                  {
+                    "attempt_id": "w02.a2",
+                    "confirmation": "recorded",
+                    "revision_id": "w02.r2"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w02.r1",
+                  "w02.r2"
+                ],
+                "tick": 16,
+                "written_route_available": true
+              },
+              "surface": "history",
+              "text_entries": [
+                {
+                  "entry_id": "w02.r1",
+                  "kind": "challenge_revision",
+                  "revision_id": "w02.r1",
+                  "text": "Please review premise-alpha.",
+                  "tick": 0
+                },
+                {
+                  "entry_id": "w02.v1",
+                  "kind": "review",
+                  "revision_id": "w02.r1",
+                  "text": "Reviewed the first submitted text.",
+                  "tick": 5
+                },
+                {
+                  "entry_id": "w02.b1",
+                  "kind": "response",
+                  "revision_id": "w02.r1",
+                  "text": "Response to revision-one only.",
+                  "tick": 8
+                },
+                {
+                  "entry_id": "w02.r2",
+                  "kind": "challenge_revision",
+                  "revision_id": "w02.r2",
+                  "text": "Correction: premise-alpha should read premise-beta.",
+                  "tick": 11
+                }
+              ],
+              "transcript_event_ids": [
+                "w02.e01",
+                "w02.e02",
+                "w02.e03",
+                "w02.e04",
+                "w02.e05",
+                "w02.e06",
+                "w02.e07",
+                "w02.e08",
+                "w02.e09",
+                "w02.e10",
+                "w02.e11",
+                "w02.e12",
+                "w02.e13"
+              ]
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w02.r1"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "unavailable",
+              "current_response_timing": "unconfirmed",
+              "current_review_accepted": false,
+              "current_review_recorded": false,
+              "current_revision_id": "w02.r2",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w02.r1",
+                  "text": "Please review premise-alpha.",
+                  "tick": 0
+                },
+                {
+                  "predecessor_revision_id": "w02.r1",
+                  "revision_id": "w02.r2",
+                  "text": "Correction: premise-alpha should read premise-beta.",
+                  "tick": 11
+                }
+              ],
+              "draft_revision_id": "w02.r2",
+              "inspected_draft_revision_id": "w02.r2",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [
+                {
+                  "record_id": "w02.b1",
+                  "revision_id": "w02.r1",
+                  "text": "Response to revision-one only.",
+                  "tick": 8
+                }
+              ],
+              "response_target_elapsed": true,
+              "review_records": [
+                {
+                  "record_id": "w02.v1",
+                  "revision_id": "w02.r1",
+                  "text": "Reviewed the first submitted text.",
+                  "tick": 5
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w02.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w02.r1"
+                },
+                {
+                  "attempt_id": "w02.a2",
+                  "confirmation": "recorded",
+                  "revision_id": "w02.r2"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w02.r1",
+                "w02.r2"
+              ],
+              "tick": 16,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w02.e17",
+            "id": "w02.cp06",
+            "projection": {
+              "challenge_id": "w02.challenge",
+              "message": "This transcript contains the declared written history and status. It does not include internal context.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w02.r1",
+                  "w02.r2"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "after_target",
+                "current_review_accepted": true,
+                "current_review_recorded": true,
+                "current_revision_id": "w02.r2",
+                "draft_revision_id": "w02.r2",
+                "inspected_draft_revision_id": "w02.r2",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": true,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w02.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w02.r1"
+                  },
+                  {
+                    "attempt_id": "w02.a2",
+                    "confirmation": "recorded",
+                    "revision_id": "w02.r2"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w02.r1",
+                  "w02.r2"
+                ],
+                "tick": 20,
+                "written_route_available": true
+              },
+              "surface": "export",
+              "text_entries": [
+                {
+                  "entry_id": "w02.r1",
+                  "kind": "challenge_revision",
+                  "revision_id": "w02.r1",
+                  "text": "Please review premise-alpha.",
+                  "tick": 0
+                },
+                {
+                  "entry_id": "w02.v1",
+                  "kind": "review",
+                  "revision_id": "w02.r1",
+                  "text": "Reviewed the first submitted text.",
+                  "tick": 5
+                },
+                {
+                  "entry_id": "w02.b1",
+                  "kind": "response",
+                  "revision_id": "w02.r1",
+                  "text": "Response to revision-one only.",
+                  "tick": 8
+                },
+                {
+                  "entry_id": "w02.r2",
+                  "kind": "challenge_revision",
+                  "revision_id": "w02.r2",
+                  "text": "Correction: premise-alpha should read premise-beta.",
+                  "tick": 11
+                },
+                {
+                  "entry_id": "w02.v2",
+                  "kind": "review",
+                  "revision_id": "w02.r2",
+                  "text": "Reviewed the correction in revision-two.",
+                  "tick": 18
+                },
+                {
+                  "entry_id": "w02.b2",
+                  "kind": "response",
+                  "revision_id": "w02.r2",
+                  "text": "Response to revision-two; resolution remains unconfirmed.",
+                  "tick": 19
+                }
+              ],
+              "transcript_event_ids": [
+                "w02.e01",
+                "w02.e02",
+                "w02.e03",
+                "w02.e04",
+                "w02.e05",
+                "w02.e06",
+                "w02.e07",
+                "w02.e08",
+                "w02.e09",
+                "w02.e10",
+                "w02.e11",
+                "w02.e12",
+                "w02.e13",
+                "w02.e14",
+                "w02.e15",
+                "w02.e16",
+                "w02.e17"
+              ]
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w02.r1",
+                "w02.r2"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "after_target",
+              "current_review_accepted": true,
+              "current_review_recorded": true,
+              "current_revision_id": "w02.r2",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w02.r1",
+                  "text": "Please review premise-alpha.",
+                  "tick": 0
+                },
+                {
+                  "predecessor_revision_id": "w02.r1",
+                  "revision_id": "w02.r2",
+                  "text": "Correction: premise-alpha should read premise-beta.",
+                  "tick": 11
+                }
+              ],
+              "draft_revision_id": "w02.r2",
+              "inspected_draft_revision_id": "w02.r2",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [
+                {
+                  "record_id": "w02.b1",
+                  "revision_id": "w02.r1",
+                  "text": "Response to revision-one only.",
+                  "tick": 8
+                },
+                {
+                  "record_id": "w02.b2",
+                  "revision_id": "w02.r2",
+                  "text": "Response to revision-two; resolution remains unconfirmed.",
+                  "tick": 19
+                }
+              ],
+              "response_target_elapsed": true,
+              "review_records": [
+                {
+                  "record_id": "w02.v1",
+                  "revision_id": "w02.r1",
+                  "text": "Reviewed the first submitted text.",
+                  "tick": 5
+                },
+                {
+                  "record_id": "w02.v2",
+                  "revision_id": "w02.r2",
+                  "text": "Reviewed the correction in revision-two.",
+                  "tick": 18
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w02.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w02.r1"
+                },
+                {
+                  "attempt_id": "w02.a2",
+                  "confirmation": "recorded",
+                  "revision_id": "w02.r2"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w02.r1",
+                "w02.r2"
+              ],
+              "tick": 20,
+              "written_route_available": true
+            }
+          }
+        ],
+        "event_outcomes": [
+          {
+            "error_code": null,
+            "event_id": "w02.e01",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w02.e02",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w02.e03",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w02.e04",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w02.e05",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w02.e06",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w02.e07",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w02.e08",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w02.e09",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w02.e10",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w02.e11",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": "revision_not_current",
+            "event_id": "w02.e12",
+            "outcome": "rejected"
+          },
+          {
+            "error_code": null,
+            "event_id": "w02.e13",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w02.e14",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w02.e15",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w02.e16",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w02.e17",
+            "outcome": "accepted"
+          }
+        ]
+      },
+      "id": "w02.base",
+      "transcript": {
+        "byte_count": 2343,
+        "input_id": "w02.base.transcript",
+        "sha256": "2aa863f32f09e18ac5e5ff1d564d9828641d70e953f89c9895b52783d5ee9039"
+      }
+    },
+    {
+      "expected": {
+        "checkpoints": [
+          {
+            "after_event_id": "w03.e03",
+            "id": "w03.cp01",
+            "projection": {
+              "challenge_id": "w03.challenge",
+              "message": "Inspect the separate submission, review, response, and resolution states below. No downstream action is authorized.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "unavailable",
+                "current_response_timing": "unconfirmed",
+                "current_review_accepted": false,
+                "current_review_recorded": false,
+                "current_revision_id": null,
+                "draft_revision_id": "w03.r1",
+                "inspected_draft_revision_id": "w03.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": false,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w03.a1",
+                    "confirmation": "unconfirmed",
+                    "revision_id": "w03.r1"
+                  }
+                ],
+                "submitted_revision_ids": [],
+                "tick": 2,
+                "written_route_available": true
+              },
+              "surface": "status",
+              "text_entries": [],
+              "transcript_event_ids": []
+            },
+            "state": {
+              "accepted_review_revision_ids": [],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "unavailable",
+              "current_response_timing": "unconfirmed",
+              "current_review_accepted": false,
+              "current_review_recorded": false,
+              "current_revision_id": null,
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w03.r1",
+                  "text": "Please review request-alpha in writing.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w03.r1",
+              "inspected_draft_revision_id": "w03.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [],
+              "response_target_elapsed": false,
+              "review_records": [],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w03.a1",
+                  "confirmation": "unconfirmed",
+                  "revision_id": "w03.r1"
+                }
+              ],
+              "submitted_revision_ids": [],
+              "tick": 2,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w03.e05",
+            "id": "w03.cp02",
+            "projection": {
+              "challenge_id": "w03.challenge",
+              "message": "Inspect the separate submission, review, response, and resolution states below. No downstream action is authorized.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "unavailable",
+                "current_response_timing": "unconfirmed",
+                "current_review_accepted": false,
+                "current_review_recorded": false,
+                "current_revision_id": null,
+                "draft_revision_id": "w03.r1",
+                "inspected_draft_revision_id": "w03.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": false,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w03.a1",
+                    "confirmation": "unconfirmed",
+                    "revision_id": "w03.r1"
+                  }
+                ],
+                "submitted_revision_ids": [],
+                "tick": 4,
+                "written_route_available": true
+              },
+              "surface": "status",
+              "text_entries": [],
+              "transcript_event_ids": []
+            },
+            "state": {
+              "accepted_review_revision_ids": [],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "unavailable",
+              "current_response_timing": "unconfirmed",
+              "current_review_accepted": false,
+              "current_review_recorded": false,
+              "current_revision_id": null,
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w03.r1",
+                  "text": "Please review request-alpha in writing.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w03.r1",
+              "inspected_draft_revision_id": "w03.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [],
+              "response_target_elapsed": false,
+              "review_records": [],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w03.a1",
+                  "confirmation": "unconfirmed",
+                  "revision_id": "w03.r1"
+                }
+              ],
+              "submitted_revision_ids": [],
+              "tick": 4,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w03.e07",
+            "id": "w03.cp03",
+            "projection": {
+              "challenge_id": "w03.challenge",
+              "message": "Inspect the separate submission, review, response, and resolution states below. No downstream action is authorized.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "unavailable",
+                "current_response_timing": "unconfirmed",
+                "current_review_accepted": false,
+                "current_review_recorded": false,
+                "current_revision_id": null,
+                "draft_revision_id": "w03.r1",
+                "inspected_draft_revision_id": "w03.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": false,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w03.a1",
+                    "confirmation": "unconfirmed",
+                    "revision_id": "w03.r1"
+                  }
+                ],
+                "submitted_revision_ids": [],
+                "tick": 6,
+                "written_route_available": true
+              },
+              "surface": "status",
+              "text_entries": [],
+              "transcript_event_ids": []
+            },
+            "state": {
+              "accepted_review_revision_ids": [],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "unavailable",
+              "current_response_timing": "unconfirmed",
+              "current_review_accepted": false,
+              "current_review_recorded": false,
+              "current_revision_id": null,
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w03.r1",
+                  "text": "Please review request-alpha in writing.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w03.r1",
+              "inspected_draft_revision_id": "w03.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [],
+              "response_target_elapsed": false,
+              "review_records": [],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w03.a1",
+                  "confirmation": "unconfirmed",
+                  "revision_id": "w03.r1"
+                }
+              ],
+              "submitted_revision_ids": [],
+              "tick": 6,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w03.e09",
+            "id": "w03.cp04",
+            "projection": {
+              "challenge_id": "w03.challenge",
+              "message": "This transcript contains the declared written history and status. It does not include internal context.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "unavailable",
+                "current_response_timing": "unconfirmed",
+                "current_review_accepted": false,
+                "current_review_recorded": false,
+                "current_revision_id": "w03.r1",
+                "draft_revision_id": "w03.r1",
+                "inspected_draft_revision_id": "w03.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": false,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w03.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w03.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w03.r1"
+                ],
+                "tick": 8,
+                "written_route_available": true
+              },
+              "surface": "export",
+              "text_entries": [
+                {
+                  "entry_id": "w03.r1",
+                  "kind": "challenge_revision",
+                  "revision_id": "w03.r1",
+                  "text": "Please review request-alpha in writing.",
+                  "tick": 0
+                }
+              ],
+              "transcript_event_ids": [
+                "w03.e01",
+                "w03.e02",
+                "w03.e03",
+                "w03.e04",
+                "w03.e05",
+                "w03.e06",
+                "w03.e07",
+                "w03.e08",
+                "w03.e09"
+              ]
+            },
+            "state": {
+              "accepted_review_revision_ids": [],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "unavailable",
+              "current_response_timing": "unconfirmed",
+              "current_review_accepted": false,
+              "current_review_recorded": false,
+              "current_revision_id": "w03.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w03.r1",
+                  "text": "Please review request-alpha in writing.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w03.r1",
+              "inspected_draft_revision_id": "w03.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [],
+              "response_target_elapsed": false,
+              "review_records": [],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w03.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w03.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w03.r1"
+              ],
+              "tick": 8,
+              "written_route_available": true
+            }
+          }
+        ],
+        "event_outcomes": [
+          {
+            "error_code": null,
+            "event_id": "w03.e01",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w03.e02",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w03.e03",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w03.e04",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w03.e05",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w03.e06",
+            "outcome": "accepted_no_change"
+          },
+          {
+            "error_code": null,
+            "event_id": "w03.e07",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w03.e08",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w03.e09",
+            "outcome": "accepted"
+          }
+        ]
+      },
+      "id": "w03.base",
+      "transcript": {
+        "byte_count": 1058,
+        "input_id": "w03.base.transcript",
+        "sha256": "d5450d312cfde7125617c33d7507074365208d7555180458afa0ab1c300cb5b8"
+      }
+    },
+    {
+      "expected": {
+        "checkpoints": [
+          {
+            "after_event_id": "w04.e05",
+            "id": "w04.cp01",
+            "projection": {
+              "challenge_id": "w04.challenge",
+              "message": "Inspect the separate submission, review, response, and resolution states below. No downstream action is authorized.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "unavailable",
+                "current_response_timing": "unconfirmed",
+                "current_review_accepted": false,
+                "current_review_recorded": false,
+                "current_revision_id": "w04.r1",
+                "draft_revision_id": "w04.r1",
+                "inspected_draft_revision_id": "w04.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [
+                  "w04.r1"
+                ],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": false,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w04.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w04.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w04.r1"
+                ],
+                "tick": 4,
+                "written_route_available": true
+              },
+              "surface": "status",
+              "text_entries": [],
+              "transcript_event_ids": []
+            },
+            "state": {
+              "accepted_review_revision_ids": [],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "unavailable",
+              "current_response_timing": "unconfirmed",
+              "current_review_accepted": false,
+              "current_review_recorded": false,
+              "current_revision_id": "w04.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w04.r1",
+                  "text": "Please seek review of premise-alpha.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w04.r1",
+              "inspected_draft_revision_id": "w04.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [
+                "w04.r1"
+              ],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [],
+              "response_target_elapsed": false,
+              "review_records": [],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w04.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w04.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w04.r1"
+              ],
+              "tick": 4,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w04.e06",
+            "id": "w04.cp02",
+            "projection": {
+              "challenge_id": "w04.challenge",
+              "message": "Inspect the separate submission, review, response, and resolution states below. No downstream action is authorized.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "by_target",
+                "current_review_accepted": false,
+                "current_review_recorded": false,
+                "current_revision_id": "w04.r1",
+                "draft_revision_id": "w04.r1",
+                "inspected_draft_revision_id": "w04.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [
+                  "w04.r1"
+                ],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": false,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w04.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w04.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w04.r1"
+                ],
+                "tick": 8,
+                "written_route_available": true
+              },
+              "surface": "status",
+              "text_entries": [],
+              "transcript_event_ids": []
+            },
+            "state": {
+              "accepted_review_revision_ids": [],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "by_target",
+              "current_review_accepted": false,
+              "current_review_recorded": false,
+              "current_revision_id": "w04.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w04.r1",
+                  "text": "Please seek review of premise-alpha.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w04.r1",
+              "inspected_draft_revision_id": "w04.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [
+                "w04.r1"
+              ],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [
+                {
+                  "record_id": "w04.b1",
+                  "revision_id": "w04.r1",
+                  "text": "Written reply received; review acceptance is not recorded.",
+                  "tick": 8
+                }
+              ],
+              "response_target_elapsed": false,
+              "review_records": [],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w04.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w04.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w04.r1"
+              ],
+              "tick": 8,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w04.e08",
+            "id": "w04.cp03",
+            "projection": {
+              "challenge_id": "w04.challenge",
+              "message": "Inspect the separate submission, review, response, and resolution states below. No downstream action is authorized.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "by_target",
+                "current_review_accepted": false,
+                "current_review_recorded": false,
+                "current_revision_id": "w04.r1",
+                "draft_revision_id": "w04.r1",
+                "inspected_draft_revision_id": "w04.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [
+                  "w04.r1"
+                ],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": true,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w04.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w04.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w04.r1"
+                ],
+                "tick": 12,
+                "written_route_available": true
+              },
+              "surface": "status",
+              "text_entries": [],
+              "transcript_event_ids": []
+            },
+            "state": {
+              "accepted_review_revision_ids": [],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "by_target",
+              "current_review_accepted": false,
+              "current_review_recorded": false,
+              "current_revision_id": "w04.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w04.r1",
+                  "text": "Please seek review of premise-alpha.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w04.r1",
+              "inspected_draft_revision_id": "w04.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [
+                "w04.r1"
+              ],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [
+                {
+                  "record_id": "w04.b1",
+                  "revision_id": "w04.r1",
+                  "text": "Written reply received; review acceptance is not recorded.",
+                  "tick": 8
+                }
+              ],
+              "response_target_elapsed": true,
+              "review_records": [],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w04.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w04.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w04.r1"
+              ],
+              "tick": 12,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w04.e09",
+            "id": "w04.cp04",
+            "projection": {
+              "challenge_id": "w04.challenge",
+              "message": "This transcript contains the declared written history and status. It does not include internal context.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "by_target",
+                "current_review_accepted": false,
+                "current_review_recorded": false,
+                "current_revision_id": "w04.r1",
+                "draft_revision_id": "w04.r1",
+                "inspected_draft_revision_id": "w04.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [
+                  "w04.r1"
+                ],
+                "resolution_target_elapsed": true,
+                "response_target_elapsed": true,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w04.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w04.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w04.r1"
+                ],
+                "tick": 30,
+                "written_route_available": true
+              },
+              "surface": "export",
+              "text_entries": [
+                {
+                  "entry_id": "w04.r1",
+                  "kind": "challenge_revision",
+                  "revision_id": "w04.r1",
+                  "text": "Please seek review of premise-alpha.",
+                  "tick": 0
+                },
+                {
+                  "entry_id": "w04.b1",
+                  "kind": "response",
+                  "revision_id": "w04.r1",
+                  "text": "Written reply received; review acceptance is not recorded.",
+                  "tick": 8
+                }
+              ],
+              "transcript_event_ids": [
+                "w04.e01",
+                "w04.e02",
+                "w04.e03",
+                "w04.e04",
+                "w04.e05",
+                "w04.e06",
+                "w04.e07",
+                "w04.e08",
+                "w04.e09"
+              ]
+            },
+            "state": {
+              "accepted_review_revision_ids": [],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "by_target",
+              "current_review_accepted": false,
+              "current_review_recorded": false,
+              "current_revision_id": "w04.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w04.r1",
+                  "text": "Please seek review of premise-alpha.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w04.r1",
+              "inspected_draft_revision_id": "w04.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [
+                "w04.r1"
+              ],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": true,
+              "response_records": [
+                {
+                  "record_id": "w04.b1",
+                  "revision_id": "w04.r1",
+                  "text": "Written reply received; review acceptance is not recorded.",
+                  "tick": 8
+                }
+              ],
+              "response_target_elapsed": true,
+              "review_records": [],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w04.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w04.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w04.r1"
+              ],
+              "tick": 30,
+              "written_route_available": true
+            }
+          }
+        ],
+        "event_outcomes": [
+          {
+            "error_code": null,
+            "event_id": "w04.e01",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w04.e02",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w04.e03",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w04.e04",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w04.e05",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w04.e06",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w04.e07",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w04.e08",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w04.e09",
+            "outcome": "accepted"
+          }
+        ]
+      },
+      "id": "w04.base",
+      "transcript": {
+        "byte_count": 1193,
+        "input_id": "w04.base.transcript",
+        "sha256": "c3ce49564564e29780bad161a7a904dc1fb5cb7a155872057b6ffa6e154031bc"
+      }
+    },
+    {
+      "expected": {
+        "checkpoints": [
+          {
+            "after_event_id": "w05.e08",
+            "id": "w05.cp01",
+            "projection": {
+              "challenge_id": "w05.challenge",
+              "message": "Inspect the separate submission, review, response, and resolution states below. No downstream action is authorized.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w05.r1"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "by_target",
+                "current_review_accepted": true,
+                "current_review_recorded": true,
+                "current_revision_id": "w05.r1",
+                "draft_revision_id": "w05.r1",
+                "inspected_draft_revision_id": "w05.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [
+                  "w05.r1"
+                ],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": false,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w05.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w05.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w05.r1"
+                ],
+                "tick": 10,
+                "written_route_available": true
+              },
+              "surface": "status",
+              "text_entries": [],
+              "transcript_event_ids": []
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w05.r1"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "by_target",
+              "current_review_accepted": true,
+              "current_review_recorded": true,
+              "current_revision_id": "w05.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w05.r1",
+                  "text": "Please clarify how request-alpha will be resolved.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w05.r1",
+              "inspected_draft_revision_id": "w05.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [
+                "w05.r1"
+              ],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [
+                {
+                  "record_id": "w05.b1",
+                  "revision_id": "w05.r1",
+                  "text": "Written response by the response target; resolution is not confirmed.",
+                  "tick": 10
+                }
+              ],
+              "response_target_elapsed": false,
+              "review_records": [
+                {
+                  "record_id": "w05.v1",
+                  "revision_id": "w05.r1",
+                  "text": "Review recorded; resolution evidence is unavailable.",
+                  "tick": 6
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w05.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w05.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w05.r1"
+              ],
+              "tick": 10,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w05.e09",
+            "id": "w05.cp02",
+            "projection": {
+              "challenge_id": "w05.challenge",
+              "message": "Inspect the separate submission, review, response, and resolution states below. No downstream action is authorized.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w05.r1"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "by_target",
+                "current_review_accepted": true,
+                "current_review_recorded": true,
+                "current_revision_id": "w05.r1",
+                "draft_revision_id": "w05.r1",
+                "inspected_draft_revision_id": "w05.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [
+                  "w05.r1"
+                ],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": true,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w05.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w05.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w05.r1"
+                ],
+                "tick": 20,
+                "written_route_available": true
+              },
+              "surface": "status",
+              "text_entries": [],
+              "transcript_event_ids": []
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w05.r1"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "by_target",
+              "current_review_accepted": true,
+              "current_review_recorded": true,
+              "current_revision_id": "w05.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w05.r1",
+                  "text": "Please clarify how request-alpha will be resolved.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w05.r1",
+              "inspected_draft_revision_id": "w05.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [
+                "w05.r1"
+              ],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [
+                {
+                  "record_id": "w05.b1",
+                  "revision_id": "w05.r1",
+                  "text": "Written response by the response target; resolution is not confirmed.",
+                  "tick": 10
+                }
+              ],
+              "response_target_elapsed": true,
+              "review_records": [
+                {
+                  "record_id": "w05.v1",
+                  "revision_id": "w05.r1",
+                  "text": "Review recorded; resolution evidence is unavailable.",
+                  "tick": 6
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w05.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w05.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w05.r1"
+              ],
+              "tick": 20,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w05.e10",
+            "id": "w05.cp03",
+            "projection": {
+              "challenge_id": "w05.challenge",
+              "message": "Inspect the separate submission, review, response, and resolution states below. No downstream action is authorized.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w05.r1"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "by_target",
+                "current_review_accepted": true,
+                "current_review_recorded": true,
+                "current_revision_id": "w05.r1",
+                "draft_revision_id": "w05.r1",
+                "inspected_draft_revision_id": "w05.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [
+                  "w05.r1"
+                ],
+                "resolution_target_elapsed": true,
+                "response_target_elapsed": true,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w05.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w05.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w05.r1"
+                ],
+                "tick": 21,
+                "written_route_available": true
+              },
+              "surface": "status",
+              "text_entries": [],
+              "transcript_event_ids": []
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w05.r1"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "by_target",
+              "current_review_accepted": true,
+              "current_review_recorded": true,
+              "current_revision_id": "w05.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w05.r1",
+                  "text": "Please clarify how request-alpha will be resolved.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w05.r1",
+              "inspected_draft_revision_id": "w05.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [
+                "w05.r1"
+              ],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": true,
+              "response_records": [
+                {
+                  "record_id": "w05.b1",
+                  "revision_id": "w05.r1",
+                  "text": "Written response by the response target; resolution is not confirmed.",
+                  "tick": 10
+                }
+              ],
+              "response_target_elapsed": true,
+              "review_records": [
+                {
+                  "record_id": "w05.v1",
+                  "revision_id": "w05.r1",
+                  "text": "Review recorded; resolution evidence is unavailable.",
+                  "tick": 6
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w05.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w05.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w05.r1"
+              ],
+              "tick": 21,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w05.e11",
+            "id": "w05.cp04",
+            "projection": {
+              "challenge_id": "w05.challenge",
+              "message": "This transcript contains the declared written history and status. It does not include internal context.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w05.r1"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "by_target",
+                "current_review_accepted": true,
+                "current_review_recorded": true,
+                "current_revision_id": "w05.r1",
+                "draft_revision_id": "w05.r1",
+                "inspected_draft_revision_id": "w05.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [
+                  "w05.r1"
+                ],
+                "resolution_target_elapsed": true,
+                "response_target_elapsed": true,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w05.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w05.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w05.r1"
+                ],
+                "tick": 30,
+                "written_route_available": true
+              },
+              "surface": "export",
+              "text_entries": [
+                {
+                  "entry_id": "w05.r1",
+                  "kind": "challenge_revision",
+                  "revision_id": "w05.r1",
+                  "text": "Please clarify how request-alpha will be resolved.",
+                  "tick": 0
+                },
+                {
+                  "entry_id": "w05.v1",
+                  "kind": "review",
+                  "revision_id": "w05.r1",
+                  "text": "Review recorded; resolution evidence is unavailable.",
+                  "tick": 6
+                },
+                {
+                  "entry_id": "w05.b1",
+                  "kind": "response",
+                  "revision_id": "w05.r1",
+                  "text": "Written response by the response target; resolution is not confirmed.",
+                  "tick": 10
+                }
+              ],
+              "transcript_event_ids": [
+                "w05.e01",
+                "w05.e02",
+                "w05.e03",
+                "w05.e04",
+                "w05.e05",
+                "w05.e06",
+                "w05.e07",
+                "w05.e08",
+                "w05.e09",
+                "w05.e10",
+                "w05.e11"
+              ]
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w05.r1"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "by_target",
+              "current_review_accepted": true,
+              "current_review_recorded": true,
+              "current_revision_id": "w05.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w05.r1",
+                  "text": "Please clarify how request-alpha will be resolved.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w05.r1",
+              "inspected_draft_revision_id": "w05.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [
+                "w05.r1"
+              ],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": true,
+              "response_records": [
+                {
+                  "record_id": "w05.b1",
+                  "revision_id": "w05.r1",
+                  "text": "Written response by the response target; resolution is not confirmed.",
+                  "tick": 10
+                }
+              ],
+              "response_target_elapsed": true,
+              "review_records": [
+                {
+                  "record_id": "w05.v1",
+                  "revision_id": "w05.r1",
+                  "text": "Review recorded; resolution evidence is unavailable.",
+                  "tick": 6
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w05.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w05.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w05.r1"
+              ],
+              "tick": 30,
+              "written_route_available": true
+            }
+          }
+        ],
+        "event_outcomes": [
+          {
+            "error_code": null,
+            "event_id": "w05.e01",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w05.e02",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w05.e03",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w05.e04",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w05.e05",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w05.e06",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w05.e07",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w05.e08",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w05.e09",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w05.e10",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w05.e11",
+            "outcome": "accepted"
+          }
+        ]
+      },
+      "id": "w05.base",
+      "transcript": {
+        "byte_count": 1498,
+        "input_id": "w05.base.transcript",
+        "sha256": "556e2288b36cff727c294481c7f40668c75cc9b02d4dc26b8c0e0da162e19225"
+      }
+    },
+    {
+      "expected": {
+        "checkpoints": [
+          {
+            "after_event_id": "w06.e02",
+            "id": "w06.cp01",
+            "projection": {
+              "challenge_id": "w06.challenge",
+              "message": "Review the written draft before submitting it. Saving or inspecting does not submit it.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "unavailable",
+                "current_response_timing": "unconfirmed",
+                "current_review_accepted": false,
+                "current_review_recorded": false,
+                "current_revision_id": null,
+                "draft_revision_id": "w06.r1",
+                "inspected_draft_revision_id": "w06.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": false,
+                "submission_attempts": [],
+                "submitted_revision_ids": [],
+                "tick": 1,
+                "written_route_available": true
+              },
+              "surface": "draft",
+              "text_entries": [
+                {
+                  "entry_id": "w06.r1",
+                  "kind": "challenge_revision",
+                  "revision_id": "w06.r1",
+                  "text": "Please explain the public premise-alpha summary.",
+                  "tick": 0
+                }
+              ],
+              "transcript_event_ids": []
+            },
+            "state": {
+              "accepted_review_revision_ids": [],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "unavailable",
+              "current_response_timing": "unconfirmed",
+              "current_review_accepted": false,
+              "current_review_recorded": false,
+              "current_revision_id": null,
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w06.r1",
+                  "text": "Please explain the public premise-alpha summary.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w06.r1",
+              "inspected_draft_revision_id": "w06.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [],
+              "response_target_elapsed": false,
+              "review_records": [],
+              "submission_attempts": [],
+              "submitted_revision_ids": [],
+              "tick": 1,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w06.e08",
+            "id": "w06.cp02",
+            "projection": {
+              "challenge_id": "w06.challenge",
+              "message": "Inspect the separate submission, review, response, and resolution states below. No downstream action is authorized.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "by_target",
+                "current_review_accepted": true,
+                "current_review_recorded": true,
+                "current_revision_id": "w06.r1",
+                "draft_revision_id": "w06.r1",
+                "inspected_draft_revision_id": "w06.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": false,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w06.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w06.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w06.r1"
+                ],
+                "tick": 8,
+                "written_route_available": true
+              },
+              "surface": "status",
+              "text_entries": [],
+              "transcript_event_ids": []
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w06.r1"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "by_target",
+              "current_review_accepted": true,
+              "current_review_recorded": true,
+              "current_revision_id": "w06.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w06.r1",
+                  "text": "Please explain the public premise-alpha summary.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w06.r1",
+              "inspected_draft_revision_id": "w06.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [
+                "w06.r1"
+              ],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [
+                {
+                  "record_id": "w06.b1",
+                  "revision_id": "w06.r1",
+                  "text": "Public written response to premise-alpha.",
+                  "tick": 8
+                }
+              ],
+              "response_target_elapsed": false,
+              "review_records": [
+                {
+                  "record_id": "w06.v1",
+                  "revision_id": "w06.r1",
+                  "text": "Review uses only the declared public challenge text.",
+                  "tick": 6
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w06.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w06.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w06.r1"
+              ],
+              "tick": 8,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w06.e09",
+            "id": "w06.cp03",
+            "projection": {
+              "challenge_id": "w06.challenge",
+              "message": "This view does not include internal context. You can inspect your written challenge, status, history, or export.",
+              "public_code": "projection_not_permitted",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "by_target",
+                "current_review_accepted": true,
+                "current_review_recorded": true,
+                "current_revision_id": "w06.r1",
+                "draft_revision_id": "w06.r1",
+                "inspected_draft_revision_id": "w06.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": false,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w06.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w06.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w06.r1"
+                ],
+                "tick": 9,
+                "written_route_available": true
+              },
+              "surface": "error",
+              "text_entries": [],
+              "transcript_event_ids": []
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w06.r1"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "by_target",
+              "current_review_accepted": true,
+              "current_review_recorded": true,
+              "current_revision_id": "w06.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w06.r1",
+                  "text": "Please explain the public premise-alpha summary.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w06.r1",
+              "inspected_draft_revision_id": "w06.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [
+                "w06.r1"
+              ],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [
+                {
+                  "record_id": "w06.b1",
+                  "revision_id": "w06.r1",
+                  "text": "Public written response to premise-alpha.",
+                  "tick": 8
+                }
+              ],
+              "response_target_elapsed": false,
+              "review_records": [
+                {
+                  "record_id": "w06.v1",
+                  "revision_id": "w06.r1",
+                  "text": "Review uses only the declared public challenge text.",
+                  "tick": 6
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w06.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w06.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w06.r1"
+              ],
+              "tick": 9,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w06.e10",
+            "id": "w06.cp04",
+            "projection": {
+              "challenge_id": "w06.challenge",
+              "message": "Your retained written revisions and responses appear in order. Earlier revisions remain distinguishable from current submitted work.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "by_target",
+                "current_review_accepted": true,
+                "current_review_recorded": true,
+                "current_revision_id": "w06.r1",
+                "draft_revision_id": "w06.r1",
+                "inspected_draft_revision_id": "w06.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": false,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w06.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w06.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w06.r1"
+                ],
+                "tick": 10,
+                "written_route_available": true
+              },
+              "surface": "history",
+              "text_entries": [
+                {
+                  "entry_id": "w06.r1",
+                  "kind": "challenge_revision",
+                  "revision_id": "w06.r1",
+                  "text": "Please explain the public premise-alpha summary.",
+                  "tick": 0
+                },
+                {
+                  "entry_id": "w06.v1",
+                  "kind": "review",
+                  "revision_id": "w06.r1",
+                  "text": "Review uses only the declared public challenge text.",
+                  "tick": 6
+                },
+                {
+                  "entry_id": "w06.b1",
+                  "kind": "response",
+                  "revision_id": "w06.r1",
+                  "text": "Public written response to premise-alpha.",
+                  "tick": 8
+                }
+              ],
+              "transcript_event_ids": [
+                "w06.e01",
+                "w06.e02",
+                "w06.e03",
+                "w06.e04",
+                "w06.e05",
+                "w06.e06",
+                "w06.e07",
+                "w06.e08",
+                "w06.e09",
+                "w06.e10"
+              ]
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w06.r1"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "by_target",
+              "current_review_accepted": true,
+              "current_review_recorded": true,
+              "current_revision_id": "w06.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w06.r1",
+                  "text": "Please explain the public premise-alpha summary.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w06.r1",
+              "inspected_draft_revision_id": "w06.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [
+                "w06.r1"
+              ],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [
+                {
+                  "record_id": "w06.b1",
+                  "revision_id": "w06.r1",
+                  "text": "Public written response to premise-alpha.",
+                  "tick": 8
+                }
+              ],
+              "response_target_elapsed": false,
+              "review_records": [
+                {
+                  "record_id": "w06.v1",
+                  "revision_id": "w06.r1",
+                  "text": "Review uses only the declared public challenge text.",
+                  "tick": 6
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w06.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w06.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w06.r1"
+              ],
+              "tick": 10,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w06.e11",
+            "id": "w06.cp05",
+            "projection": {
+              "challenge_id": "w06.challenge",
+              "message": "This transcript contains the declared written history and status. It does not include internal context.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "by_target",
+                "current_review_accepted": true,
+                "current_review_recorded": true,
+                "current_revision_id": "w06.r1",
+                "draft_revision_id": "w06.r1",
+                "inspected_draft_revision_id": "w06.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": true,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w06.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w06.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w06.r1"
+                ],
+                "tick": 11,
+                "written_route_available": true
+              },
+              "surface": "export",
+              "text_entries": [
+                {
+                  "entry_id": "w06.r1",
+                  "kind": "challenge_revision",
+                  "revision_id": "w06.r1",
+                  "text": "Please explain the public premise-alpha summary.",
+                  "tick": 0
+                },
+                {
+                  "entry_id": "w06.v1",
+                  "kind": "review",
+                  "revision_id": "w06.r1",
+                  "text": "Review uses only the declared public challenge text.",
+                  "tick": 6
+                },
+                {
+                  "entry_id": "w06.b1",
+                  "kind": "response",
+                  "revision_id": "w06.r1",
+                  "text": "Public written response to premise-alpha.",
+                  "tick": 8
+                }
+              ],
+              "transcript_event_ids": [
+                "w06.e01",
+                "w06.e02",
+                "w06.e03",
+                "w06.e04",
+                "w06.e05",
+                "w06.e06",
+                "w06.e07",
+                "w06.e08",
+                "w06.e09",
+                "w06.e10",
+                "w06.e11"
+              ]
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w06.r1"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "by_target",
+              "current_review_accepted": true,
+              "current_review_recorded": true,
+              "current_revision_id": "w06.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w06.r1",
+                  "text": "Please explain the public premise-alpha summary.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w06.r1",
+              "inspected_draft_revision_id": "w06.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [
+                "w06.r1"
+              ],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [
+                {
+                  "record_id": "w06.b1",
+                  "revision_id": "w06.r1",
+                  "text": "Public written response to premise-alpha.",
+                  "tick": 8
+                }
+              ],
+              "response_target_elapsed": true,
+              "review_records": [
+                {
+                  "record_id": "w06.v1",
+                  "revision_id": "w06.r1",
+                  "text": "Review uses only the declared public challenge text.",
+                  "tick": 6
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w06.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w06.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w06.r1"
+              ],
+              "tick": 11,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w06.e12",
+            "id": "w06.cp06",
+            "projection": {
+              "challenge_id": "w06.challenge",
+              "message": "This transcript contains the declared written history and status. It does not include internal context.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "by_target",
+                "current_review_accepted": true,
+                "current_review_recorded": true,
+                "current_revision_id": "w06.r1",
+                "draft_revision_id": "w06.r1",
+                "inspected_draft_revision_id": "w06.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": true,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w06.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w06.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w06.r1"
+                ],
+                "tick": 12,
+                "written_route_available": true
+              },
+              "surface": "export",
+              "text_entries": [
+                {
+                  "entry_id": "w06.r1",
+                  "kind": "challenge_revision",
+                  "revision_id": "w06.r1",
+                  "text": "Please explain the public premise-alpha summary.",
+                  "tick": 0
+                },
+                {
+                  "entry_id": "w06.v1",
+                  "kind": "review",
+                  "revision_id": "w06.r1",
+                  "text": "Review uses only the declared public challenge text.",
+                  "tick": 6
+                },
+                {
+                  "entry_id": "w06.b1",
+                  "kind": "response",
+                  "revision_id": "w06.r1",
+                  "text": "Public written response to premise-alpha.",
+                  "tick": 8
+                }
+              ],
+              "transcript_event_ids": [
+                "w06.e01",
+                "w06.e02",
+                "w06.e03",
+                "w06.e04",
+                "w06.e05",
+                "w06.e06",
+                "w06.e07",
+                "w06.e08",
+                "w06.e09",
+                "w06.e10",
+                "w06.e11",
+                "w06.e12"
+              ]
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w06.r1"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "by_target",
+              "current_review_accepted": true,
+              "current_review_recorded": true,
+              "current_revision_id": "w06.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w06.r1",
+                  "text": "Please explain the public premise-alpha summary.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w06.r1",
+              "inspected_draft_revision_id": "w06.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [
+                "w06.r1"
+              ],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [
+                {
+                  "record_id": "w06.b1",
+                  "revision_id": "w06.r1",
+                  "text": "Public written response to premise-alpha.",
+                  "tick": 8
+                }
+              ],
+              "response_target_elapsed": true,
+              "review_records": [
+                {
+                  "record_id": "w06.v1",
+                  "revision_id": "w06.r1",
+                  "text": "Review uses only the declared public challenge text.",
+                  "tick": 6
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w06.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w06.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w06.r1"
+              ],
+              "tick": 12,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w06.e14",
+            "id": "w06.cp07",
+            "projection": {
+              "challenge_id": "w06.challenge",
+              "message": "Review the written draft before submitting it. Saving or inspecting does not submit it.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "by_target",
+                "current_review_accepted": true,
+                "current_review_recorded": true,
+                "current_revision_id": "w06.r1",
+                "draft_revision_id": "w06.r2",
+                "inspected_draft_revision_id": "w06.r2",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": true,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w06.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w06.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w06.r1"
+                ],
+                "tick": 14,
+                "written_route_available": true
+              },
+              "surface": "draft",
+              "text_entries": [
+                {
+                  "entry_id": "w06.r2",
+                  "kind": "challenge_revision",
+                  "revision_id": "w06.r2",
+                  "text": "Correction: please also address public premise-beta.",
+                  "tick": 13
+                }
+              ],
+              "transcript_event_ids": []
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w06.r1"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "by_target",
+              "current_review_accepted": true,
+              "current_review_recorded": true,
+              "current_revision_id": "w06.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w06.r1",
+                  "text": "Please explain the public premise-alpha summary.",
+                  "tick": 0
+                },
+                {
+                  "predecessor_revision_id": "w06.r1",
+                  "revision_id": "w06.r2",
+                  "text": "Correction: please also address public premise-beta.",
+                  "tick": 13
+                }
+              ],
+              "draft_revision_id": "w06.r2",
+              "inspected_draft_revision_id": "w06.r2",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [
+                "w06.r1"
+              ],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [
+                {
+                  "record_id": "w06.b1",
+                  "revision_id": "w06.r1",
+                  "text": "Public written response to premise-alpha.",
+                  "tick": 8
+                }
+              ],
+              "response_target_elapsed": true,
+              "review_records": [
+                {
+                  "record_id": "w06.v1",
+                  "revision_id": "w06.r1",
+                  "text": "Review uses only the declared public challenge text.",
+                  "tick": 6
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w06.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w06.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w06.r1"
+              ],
+              "tick": 14,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w06.e15",
+            "id": "w06.cp08",
+            "projection": {
+              "challenge_id": "w06.challenge",
+              "message": "This transcript contains the declared written history and status. It does not include internal context.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "by_target",
+                "current_review_accepted": true,
+                "current_review_recorded": true,
+                "current_revision_id": "w06.r1",
+                "draft_revision_id": "w06.r2",
+                "inspected_draft_revision_id": "w06.r2",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": true,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w06.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w06.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w06.r1"
+                ],
+                "tick": 15,
+                "written_route_available": true
+              },
+              "surface": "export",
+              "text_entries": [
+                {
+                  "entry_id": "w06.r1",
+                  "kind": "challenge_revision",
+                  "revision_id": "w06.r1",
+                  "text": "Please explain the public premise-alpha summary.",
+                  "tick": 0
+                },
+                {
+                  "entry_id": "w06.v1",
+                  "kind": "review",
+                  "revision_id": "w06.r1",
+                  "text": "Review uses only the declared public challenge text.",
+                  "tick": 6
+                },
+                {
+                  "entry_id": "w06.b1",
+                  "kind": "response",
+                  "revision_id": "w06.r1",
+                  "text": "Public written response to premise-alpha.",
+                  "tick": 8
+                },
+                {
+                  "entry_id": "w06.r2",
+                  "kind": "challenge_revision",
+                  "revision_id": "w06.r2",
+                  "text": "Correction: please also address public premise-beta.",
+                  "tick": 13
+                }
+              ],
+              "transcript_event_ids": [
+                "w06.e01",
+                "w06.e02",
+                "w06.e03",
+                "w06.e04",
+                "w06.e05",
+                "w06.e06",
+                "w06.e07",
+                "w06.e08",
+                "w06.e09",
+                "w06.e10",
+                "w06.e11",
+                "w06.e12",
+                "w06.e13",
+                "w06.e14",
+                "w06.e15"
+              ]
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w06.r1"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "by_target",
+              "current_review_accepted": true,
+              "current_review_recorded": true,
+              "current_revision_id": "w06.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w06.r1",
+                  "text": "Please explain the public premise-alpha summary.",
+                  "tick": 0
+                },
+                {
+                  "predecessor_revision_id": "w06.r1",
+                  "revision_id": "w06.r2",
+                  "text": "Correction: please also address public premise-beta.",
+                  "tick": 13
+                }
+              ],
+              "draft_revision_id": "w06.r2",
+              "inspected_draft_revision_id": "w06.r2",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [
+                "w06.r1"
+              ],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [
+                {
+                  "record_id": "w06.b1",
+                  "revision_id": "w06.r1",
+                  "text": "Public written response to premise-alpha.",
+                  "tick": 8
+                }
+              ],
+              "response_target_elapsed": true,
+              "review_records": [
+                {
+                  "record_id": "w06.v1",
+                  "revision_id": "w06.r1",
+                  "text": "Review uses only the declared public challenge text.",
+                  "tick": 6
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w06.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w06.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w06.r1"
+              ],
+              "tick": 15,
+              "written_route_available": true
+            }
+          }
+        ],
+        "event_outcomes": [
+          {
+            "error_code": null,
+            "event_id": "w06.e01",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w06.e02",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w06.e03",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w06.e04",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w06.e05",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w06.e06",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w06.e07",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w06.e08",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": "projection_not_permitted",
+            "event_id": "w06.e09",
+            "outcome": "rejected"
+          },
+          {
+            "error_code": null,
+            "event_id": "w06.e10",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w06.e11",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w06.e12",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w06.e13",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w06.e14",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w06.e15",
+            "outcome": "accepted"
+          }
+        ]
+      },
+      "id": "w06.hidden_alpha",
+      "transcript": {
+        "byte_count": 1869,
+        "input_id": "w06.hidden_alpha.transcript",
+        "sha256": "ed4e271b993da4dcfabe602af4ee2c87155163dfc6f7a5b8454baaf537dc0d3f"
+      }
+    },
+    {
+      "expected": {
+        "checkpoints": [
+          {
+            "after_event_id": "w06.e02",
+            "id": "w06.cp01",
+            "projection": {
+              "challenge_id": "w06.challenge",
+              "message": "Review the written draft before submitting it. Saving or inspecting does not submit it.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "unavailable",
+                "current_response_timing": "unconfirmed",
+                "current_review_accepted": false,
+                "current_review_recorded": false,
+                "current_revision_id": null,
+                "draft_revision_id": "w06.r1",
+                "inspected_draft_revision_id": "w06.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": false,
+                "submission_attempts": [],
+                "submitted_revision_ids": [],
+                "tick": 1,
+                "written_route_available": true
+              },
+              "surface": "draft",
+              "text_entries": [
+                {
+                  "entry_id": "w06.r1",
+                  "kind": "challenge_revision",
+                  "revision_id": "w06.r1",
+                  "text": "Please explain the public premise-alpha summary.",
+                  "tick": 0
+                }
+              ],
+              "transcript_event_ids": []
+            },
+            "state": {
+              "accepted_review_revision_ids": [],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "unavailable",
+              "current_response_timing": "unconfirmed",
+              "current_review_accepted": false,
+              "current_review_recorded": false,
+              "current_revision_id": null,
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w06.r1",
+                  "text": "Please explain the public premise-alpha summary.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w06.r1",
+              "inspected_draft_revision_id": "w06.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [],
+              "response_target_elapsed": false,
+              "review_records": [],
+              "submission_attempts": [],
+              "submitted_revision_ids": [],
+              "tick": 1,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w06.e08",
+            "id": "w06.cp02",
+            "projection": {
+              "challenge_id": "w06.challenge",
+              "message": "Inspect the separate submission, review, response, and resolution states below. No downstream action is authorized.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "by_target",
+                "current_review_accepted": true,
+                "current_review_recorded": true,
+                "current_revision_id": "w06.r1",
+                "draft_revision_id": "w06.r1",
+                "inspected_draft_revision_id": "w06.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": false,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w06.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w06.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w06.r1"
+                ],
+                "tick": 8,
+                "written_route_available": true
+              },
+              "surface": "status",
+              "text_entries": [],
+              "transcript_event_ids": []
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w06.r1"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "by_target",
+              "current_review_accepted": true,
+              "current_review_recorded": true,
+              "current_revision_id": "w06.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w06.r1",
+                  "text": "Please explain the public premise-alpha summary.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w06.r1",
+              "inspected_draft_revision_id": "w06.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [
+                "w06.r1"
+              ],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [
+                {
+                  "record_id": "w06.b1",
+                  "revision_id": "w06.r1",
+                  "text": "Public written response to premise-alpha.",
+                  "tick": 8
+                }
+              ],
+              "response_target_elapsed": false,
+              "review_records": [
+                {
+                  "record_id": "w06.v1",
+                  "revision_id": "w06.r1",
+                  "text": "Review uses only the declared public challenge text.",
+                  "tick": 6
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w06.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w06.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w06.r1"
+              ],
+              "tick": 8,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w06.e09",
+            "id": "w06.cp03",
+            "projection": {
+              "challenge_id": "w06.challenge",
+              "message": "This view does not include internal context. You can inspect your written challenge, status, history, or export.",
+              "public_code": "projection_not_permitted",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "by_target",
+                "current_review_accepted": true,
+                "current_review_recorded": true,
+                "current_revision_id": "w06.r1",
+                "draft_revision_id": "w06.r1",
+                "inspected_draft_revision_id": "w06.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": false,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w06.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w06.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w06.r1"
+                ],
+                "tick": 9,
+                "written_route_available": true
+              },
+              "surface": "error",
+              "text_entries": [],
+              "transcript_event_ids": []
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w06.r1"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "by_target",
+              "current_review_accepted": true,
+              "current_review_recorded": true,
+              "current_revision_id": "w06.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w06.r1",
+                  "text": "Please explain the public premise-alpha summary.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w06.r1",
+              "inspected_draft_revision_id": "w06.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [
+                "w06.r1"
+              ],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [
+                {
+                  "record_id": "w06.b1",
+                  "revision_id": "w06.r1",
+                  "text": "Public written response to premise-alpha.",
+                  "tick": 8
+                }
+              ],
+              "response_target_elapsed": false,
+              "review_records": [
+                {
+                  "record_id": "w06.v1",
+                  "revision_id": "w06.r1",
+                  "text": "Review uses only the declared public challenge text.",
+                  "tick": 6
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w06.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w06.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w06.r1"
+              ],
+              "tick": 9,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w06.e10",
+            "id": "w06.cp04",
+            "projection": {
+              "challenge_id": "w06.challenge",
+              "message": "Your retained written revisions and responses appear in order. Earlier revisions remain distinguishable from current submitted work.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "by_target",
+                "current_review_accepted": true,
+                "current_review_recorded": true,
+                "current_revision_id": "w06.r1",
+                "draft_revision_id": "w06.r1",
+                "inspected_draft_revision_id": "w06.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": false,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w06.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w06.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w06.r1"
+                ],
+                "tick": 10,
+                "written_route_available": true
+              },
+              "surface": "history",
+              "text_entries": [
+                {
+                  "entry_id": "w06.r1",
+                  "kind": "challenge_revision",
+                  "revision_id": "w06.r1",
+                  "text": "Please explain the public premise-alpha summary.",
+                  "tick": 0
+                },
+                {
+                  "entry_id": "w06.v1",
+                  "kind": "review",
+                  "revision_id": "w06.r1",
+                  "text": "Review uses only the declared public challenge text.",
+                  "tick": 6
+                },
+                {
+                  "entry_id": "w06.b1",
+                  "kind": "response",
+                  "revision_id": "w06.r1",
+                  "text": "Public written response to premise-alpha.",
+                  "tick": 8
+                }
+              ],
+              "transcript_event_ids": [
+                "w06.e01",
+                "w06.e02",
+                "w06.e03",
+                "w06.e04",
+                "w06.e05",
+                "w06.e06",
+                "w06.e07",
+                "w06.e08",
+                "w06.e09",
+                "w06.e10"
+              ]
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w06.r1"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "by_target",
+              "current_review_accepted": true,
+              "current_review_recorded": true,
+              "current_revision_id": "w06.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w06.r1",
+                  "text": "Please explain the public premise-alpha summary.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w06.r1",
+              "inspected_draft_revision_id": "w06.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [
+                "w06.r1"
+              ],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [
+                {
+                  "record_id": "w06.b1",
+                  "revision_id": "w06.r1",
+                  "text": "Public written response to premise-alpha.",
+                  "tick": 8
+                }
+              ],
+              "response_target_elapsed": false,
+              "review_records": [
+                {
+                  "record_id": "w06.v1",
+                  "revision_id": "w06.r1",
+                  "text": "Review uses only the declared public challenge text.",
+                  "tick": 6
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w06.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w06.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w06.r1"
+              ],
+              "tick": 10,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w06.e11",
+            "id": "w06.cp05",
+            "projection": {
+              "challenge_id": "w06.challenge",
+              "message": "This transcript contains the declared written history and status. It does not include internal context.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "by_target",
+                "current_review_accepted": true,
+                "current_review_recorded": true,
+                "current_revision_id": "w06.r1",
+                "draft_revision_id": "w06.r1",
+                "inspected_draft_revision_id": "w06.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": true,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w06.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w06.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w06.r1"
+                ],
+                "tick": 11,
+                "written_route_available": true
+              },
+              "surface": "export",
+              "text_entries": [
+                {
+                  "entry_id": "w06.r1",
+                  "kind": "challenge_revision",
+                  "revision_id": "w06.r1",
+                  "text": "Please explain the public premise-alpha summary.",
+                  "tick": 0
+                },
+                {
+                  "entry_id": "w06.v1",
+                  "kind": "review",
+                  "revision_id": "w06.r1",
+                  "text": "Review uses only the declared public challenge text.",
+                  "tick": 6
+                },
+                {
+                  "entry_id": "w06.b1",
+                  "kind": "response",
+                  "revision_id": "w06.r1",
+                  "text": "Public written response to premise-alpha.",
+                  "tick": 8
+                }
+              ],
+              "transcript_event_ids": [
+                "w06.e01",
+                "w06.e02",
+                "w06.e03",
+                "w06.e04",
+                "w06.e05",
+                "w06.e06",
+                "w06.e07",
+                "w06.e08",
+                "w06.e09",
+                "w06.e10",
+                "w06.e11"
+              ]
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w06.r1"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "by_target",
+              "current_review_accepted": true,
+              "current_review_recorded": true,
+              "current_revision_id": "w06.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w06.r1",
+                  "text": "Please explain the public premise-alpha summary.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w06.r1",
+              "inspected_draft_revision_id": "w06.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [
+                "w06.r1"
+              ],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [
+                {
+                  "record_id": "w06.b1",
+                  "revision_id": "w06.r1",
+                  "text": "Public written response to premise-alpha.",
+                  "tick": 8
+                }
+              ],
+              "response_target_elapsed": true,
+              "review_records": [
+                {
+                  "record_id": "w06.v1",
+                  "revision_id": "w06.r1",
+                  "text": "Review uses only the declared public challenge text.",
+                  "tick": 6
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w06.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w06.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w06.r1"
+              ],
+              "tick": 11,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w06.e12",
+            "id": "w06.cp06",
+            "projection": {
+              "challenge_id": "w06.challenge",
+              "message": "This transcript contains the declared written history and status. It does not include internal context.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "by_target",
+                "current_review_accepted": true,
+                "current_review_recorded": true,
+                "current_revision_id": "w06.r1",
+                "draft_revision_id": "w06.r1",
+                "inspected_draft_revision_id": "w06.r1",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": true,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w06.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w06.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w06.r1"
+                ],
+                "tick": 12,
+                "written_route_available": true
+              },
+              "surface": "export",
+              "text_entries": [
+                {
+                  "entry_id": "w06.r1",
+                  "kind": "challenge_revision",
+                  "revision_id": "w06.r1",
+                  "text": "Please explain the public premise-alpha summary.",
+                  "tick": 0
+                },
+                {
+                  "entry_id": "w06.v1",
+                  "kind": "review",
+                  "revision_id": "w06.r1",
+                  "text": "Review uses only the declared public challenge text.",
+                  "tick": 6
+                },
+                {
+                  "entry_id": "w06.b1",
+                  "kind": "response",
+                  "revision_id": "w06.r1",
+                  "text": "Public written response to premise-alpha.",
+                  "tick": 8
+                }
+              ],
+              "transcript_event_ids": [
+                "w06.e01",
+                "w06.e02",
+                "w06.e03",
+                "w06.e04",
+                "w06.e05",
+                "w06.e06",
+                "w06.e07",
+                "w06.e08",
+                "w06.e09",
+                "w06.e10",
+                "w06.e11",
+                "w06.e12"
+              ]
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w06.r1"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "by_target",
+              "current_review_accepted": true,
+              "current_review_recorded": true,
+              "current_revision_id": "w06.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w06.r1",
+                  "text": "Please explain the public premise-alpha summary.",
+                  "tick": 0
+                }
+              ],
+              "draft_revision_id": "w06.r1",
+              "inspected_draft_revision_id": "w06.r1",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [
+                "w06.r1"
+              ],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [
+                {
+                  "record_id": "w06.b1",
+                  "revision_id": "w06.r1",
+                  "text": "Public written response to premise-alpha.",
+                  "tick": 8
+                }
+              ],
+              "response_target_elapsed": true,
+              "review_records": [
+                {
+                  "record_id": "w06.v1",
+                  "revision_id": "w06.r1",
+                  "text": "Review uses only the declared public challenge text.",
+                  "tick": 6
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w06.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w06.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w06.r1"
+              ],
+              "tick": 12,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w06.e14",
+            "id": "w06.cp07",
+            "projection": {
+              "challenge_id": "w06.challenge",
+              "message": "Review the written draft before submitting it. Saving or inspecting does not submit it.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "by_target",
+                "current_review_accepted": true,
+                "current_review_recorded": true,
+                "current_revision_id": "w06.r1",
+                "draft_revision_id": "w06.r2",
+                "inspected_draft_revision_id": "w06.r2",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": true,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w06.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w06.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w06.r1"
+                ],
+                "tick": 14,
+                "written_route_available": true
+              },
+              "surface": "draft",
+              "text_entries": [
+                {
+                  "entry_id": "w06.r2",
+                  "kind": "challenge_revision",
+                  "revision_id": "w06.r2",
+                  "text": "Correction: please also address public premise-beta.",
+                  "tick": 13
+                }
+              ],
+              "transcript_event_ids": []
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w06.r1"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "by_target",
+              "current_review_accepted": true,
+              "current_review_recorded": true,
+              "current_revision_id": "w06.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w06.r1",
+                  "text": "Please explain the public premise-alpha summary.",
+                  "tick": 0
+                },
+                {
+                  "predecessor_revision_id": "w06.r1",
+                  "revision_id": "w06.r2",
+                  "text": "Correction: please also address public premise-beta.",
+                  "tick": 13
+                }
+              ],
+              "draft_revision_id": "w06.r2",
+              "inspected_draft_revision_id": "w06.r2",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [
+                "w06.r1"
+              ],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [
+                {
+                  "record_id": "w06.b1",
+                  "revision_id": "w06.r1",
+                  "text": "Public written response to premise-alpha.",
+                  "tick": 8
+                }
+              ],
+              "response_target_elapsed": true,
+              "review_records": [
+                {
+                  "record_id": "w06.v1",
+                  "revision_id": "w06.r1",
+                  "text": "Review uses only the declared public challenge text.",
+                  "tick": 6
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w06.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w06.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w06.r1"
+              ],
+              "tick": 14,
+              "written_route_available": true
+            }
+          },
+          {
+            "after_event_id": "w06.e15",
+            "id": "w06.cp08",
+            "projection": {
+              "challenge_id": "w06.challenge",
+              "message": "This transcript contains the declared written history and status. It does not include internal context.",
+              "public_code": "ok",
+              "schema": "noe.written-challenge-visible-projection/1",
+              "status": {
+                "accepted_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "authority_status": "not_established",
+                "current_resolution_evidence": "unavailable",
+                "current_resolution_timing": "unconfirmed",
+                "current_response_evidence": "recorded",
+                "current_response_timing": "by_target",
+                "current_review_accepted": true,
+                "current_review_recorded": true,
+                "current_revision_id": "w06.r1",
+                "draft_revision_id": "w06.r2",
+                "inspected_draft_revision_id": "w06.r2",
+                "participant_position": "not_recorded",
+                "requested_review_revision_ids": [
+                  "w06.r1"
+                ],
+                "resolution_target_elapsed": false,
+                "response_target_elapsed": true,
+                "submission_attempts": [
+                  {
+                    "attempt_id": "w06.a1",
+                    "confirmation": "recorded",
+                    "revision_id": "w06.r1"
+                  }
+                ],
+                "submitted_revision_ids": [
+                  "w06.r1"
+                ],
+                "tick": 15,
+                "written_route_available": true
+              },
+              "surface": "export",
+              "text_entries": [
+                {
+                  "entry_id": "w06.r1",
+                  "kind": "challenge_revision",
+                  "revision_id": "w06.r1",
+                  "text": "Please explain the public premise-alpha summary.",
+                  "tick": 0
+                },
+                {
+                  "entry_id": "w06.v1",
+                  "kind": "review",
+                  "revision_id": "w06.r1",
+                  "text": "Review uses only the declared public challenge text.",
+                  "tick": 6
+                },
+                {
+                  "entry_id": "w06.b1",
+                  "kind": "response",
+                  "revision_id": "w06.r1",
+                  "text": "Public written response to premise-alpha.",
+                  "tick": 8
+                },
+                {
+                  "entry_id": "w06.r2",
+                  "kind": "challenge_revision",
+                  "revision_id": "w06.r2",
+                  "text": "Correction: please also address public premise-beta.",
+                  "tick": 13
+                }
+              ],
+              "transcript_event_ids": [
+                "w06.e01",
+                "w06.e02",
+                "w06.e03",
+                "w06.e04",
+                "w06.e05",
+                "w06.e06",
+                "w06.e07",
+                "w06.e08",
+                "w06.e09",
+                "w06.e10",
+                "w06.e11",
+                "w06.e12",
+                "w06.e13",
+                "w06.e14",
+                "w06.e15"
+              ]
+            },
+            "state": {
+              "accepted_review_revision_ids": [
+                "w06.r1"
+              ],
+              "authority_status": "not_established",
+              "current_resolution_evidence": "unavailable",
+              "current_resolution_timing": "unconfirmed",
+              "current_response_evidence": "recorded",
+              "current_response_timing": "by_target",
+              "current_review_accepted": true,
+              "current_review_recorded": true,
+              "current_revision_id": "w06.r1",
+              "disagreements": [],
+              "downstream_actions": [],
+              "draft_records": [
+                {
+                  "predecessor_revision_id": null,
+                  "revision_id": "w06.r1",
+                  "text": "Please explain the public premise-alpha summary.",
+                  "tick": 0
+                },
+                {
+                  "predecessor_revision_id": "w06.r1",
+                  "revision_id": "w06.r2",
+                  "text": "Correction: please also address public premise-beta.",
+                  "tick": 13
+                }
+              ],
+              "draft_revision_id": "w06.r2",
+              "inspected_draft_revision_id": "w06.r2",
+              "participant_position": "not_recorded",
+              "requested_review_revision_ids": [
+                "w06.r1"
+              ],
+              "resolution_proposals": [],
+              "resolution_records": [],
+              "resolution_target_elapsed": false,
+              "response_records": [
+                {
+                  "record_id": "w06.b1",
+                  "revision_id": "w06.r1",
+                  "text": "Public written response to premise-alpha.",
+                  "tick": 8
+                }
+              ],
+              "response_target_elapsed": true,
+              "review_records": [
+                {
+                  "record_id": "w06.v1",
+                  "revision_id": "w06.r1",
+                  "text": "Review uses only the declared public challenge text.",
+                  "tick": 6
+                }
+              ],
+              "submission_attempts": [
+                {
+                  "attempt_id": "w06.a1",
+                  "confirmation": "recorded",
+                  "revision_id": "w06.r1"
+                }
+              ],
+              "submitted_revision_ids": [
+                "w06.r1"
+              ],
+              "tick": 15,
+              "written_route_available": true
+            }
+          }
+        ],
+        "event_outcomes": [
+          {
+            "error_code": null,
+            "event_id": "w06.e01",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w06.e02",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w06.e03",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w06.e04",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w06.e05",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w06.e06",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w06.e07",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w06.e08",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": "projection_not_permitted",
+            "event_id": "w06.e09",
+            "outcome": "rejected"
+          },
+          {
+            "error_code": null,
+            "event_id": "w06.e10",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w06.e11",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w06.e12",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w06.e13",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w06.e14",
+            "outcome": "accepted"
+          },
+          {
+            "error_code": null,
+            "event_id": "w06.e15",
+            "outcome": "accepted"
+          }
+        ]
+      },
+      "id": "w06.hidden_beta",
+      "transcript": {
+        "byte_count": 1869,
+        "input_id": "w06.hidden_beta.transcript",
+        "sha256": "ed4e271b993da4dcfabe602af4ee2c87155163dfc6f7a5b8454baaf537dc0d3f"
+      }
+    }
+  ],
+  "corpus_id": "written-challenge-v0.1",
+  "profile_id": "noe.written-challenge/1",
+  "revision": "2337d11ce9f50a8a075723254f1a38bf014cd84d",
+  "schema": "noe.written-challenge-corpus/1"
+}
