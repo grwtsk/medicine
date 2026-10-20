@@ -1,0 +1,1015 @@
+{
+  "schema": "grwtsk.medicine.written-challenge-scenarios/1",
+  "suite_id": "written-challenge-v0.1",
+  "artifact_kind": "authored-synthetic-specification",
+  "scope": "synthetic-written-challenge",
+  "timing": {
+    "unit": "synthetic_tick",
+    "start": 0,
+    "response_target": 10,
+    "resolution_target": 20,
+    "review_cutoff": 30,
+    "target_comparison": "inclusive",
+    "episode": "challenge-relative",
+    "correction_resets_targets": false
+  },
+  "baseline_reference": {
+    "id": "b01",
+    "repository": "grwtsk/medicine",
+    "revision": "02aada9bdc9eb7e66a7c44547f298b141f3967ca",
+    "source_suite_id": "communication-v0.1",
+    "case_id": "c08",
+    "view_id": "review",
+    "required_route": "written_exchange",
+    "offered_route": "speech_only",
+    "source_files": [
+      {
+        "path": "acceptance/communication-v0.1/specification.md",
+        "sha256": "6e74029c0822dba2c969af873bec559a49b2957c6c9ee15315afd960441aadae",
+        "byte_count": 16531
+      },
+      {
+        "path": "acceptance/communication-v0.1/scenarios.json",
+        "sha256": "4dd6a449ed28ebe46c7ecc47cf81c2addbfc054a9028f436c037cdd3c02b694b",
+        "byte_count": 29741
+      },
+      {
+        "path": "acceptance/communication-v0.1/expectations.json",
+        "sha256": "d3a692ec3abc2d9b7edd4eb3850e363ba2dd63157bcd17e013afb2d1bb1bff9c",
+        "byte_count": 33693
+      },
+      {
+        "path": "acceptance/communication-v0.1/bindings.toml",
+        "sha256": "a852d551b3fd8ee78924a3527cb3f7c95eb3c1c5e65396c27c401ceed768c14d",
+        "byte_count": 1594
+      }
+    ],
+    "predicate_order": [
+      "R",
+      "U",
+      "A",
+      "H",
+      "Tr",
+      "Ts"
+    ]
+  },
+  "requirements": [
+    {
+      "id": "WC01",
+      "requirement": "Provide every required interaction, recovery step, and response in writing for the stipulated written-exchange need."
+    },
+    {
+      "id": "WC02",
+      "requirement": "Preserve exact drafts, explicit submission identity, and unconfirmed attempts across the stipulated pause; do not silently duplicate a submission."
+    },
+    {
+      "id": "WC03",
+      "requirement": "Preserve corrections and prior submitted text; bind review and response to the exact revision; do not treat an unsubmitted draft as submitted."
+    },
+    {
+      "id": "WC04",
+      "requirement": "Keep proposed review request, acceptance, review note, response, resolution proposal, and resolution record as separate observations."
+    },
+    {
+      "id": "WC05",
+      "requirement": "Keep inclusive timing, late recorded events, elapsed targets, and unavailable event evidence separate; corrections do not reset targets."
+    },
+    {
+      "id": "WC06",
+      "requirement": "Match the declared visible projection across normal output, errors, history, export, and repeated requests for the paired hidden contexts."
+    },
+    {
+      "id": "WC07",
+      "requirement": "Preserve written disagreement and correction after response or recorded resolution; do not infer agreement from silence."
+    },
+    {
+      "id": "WC08",
+      "requirement": "Emit no downstream action and establish no actual appointment, transfer of responsibility, or authority."
+    },
+    {
+      "id": "WC09",
+      "requirement": "Keep authored expectations, execution evidence, interaction review, professional interpretation, and permission to act as distinct judgments."
+    }
+  ],
+  "disclosure_profile": {
+    "id": "participant-written/1",
+    "status_fields": [
+      "tick",
+      "draft_revision_id",
+      "inspected_draft_revision_id",
+      "current_revision_id",
+      "submission_attempts",
+      "submitted_revision_ids",
+      "requested_review_revision_ids",
+      "accepted_review_revision_ids",
+      "current_review_accepted",
+      "current_review_recorded",
+      "current_response_evidence",
+      "current_response_timing",
+      "current_resolution_evidence",
+      "current_resolution_timing",
+      "response_target_elapsed",
+      "resolution_target_elapsed",
+      "participant_position",
+      "written_route_available",
+      "authority_status"
+    ],
+    "allowed_text_kinds": [
+      "challenge_revision",
+      "review",
+      "response",
+      "resolution_proposal",
+      "resolution",
+      "disagreement"
+    ],
+    "allowed_surfaces": [
+      "draft",
+      "status",
+      "history",
+      "export",
+      "error"
+    ],
+    "excluded_internal_fields": [
+      "model_text",
+      "witness_ids",
+      "counts",
+      "diagnostic_text",
+      "hidden_note"
+    ],
+    "scope": "Declared synthetic participant projection only; this identifier authenticates no role and grants no permission."
+  },
+  "cases": [
+    {
+      "id": "w01",
+      "title": "Written lifecycle with continuing disagreement",
+      "challenge_id": "w01.challenge",
+      "requirement_ids": [
+        "WC01",
+        "WC02",
+        "WC04",
+        "WC05",
+        "WC07",
+        "WC08",
+        "WC09"
+      ],
+      "participant_need": "written_exchange",
+      "offered_route": "written_exchange",
+      "variants": [
+        {
+          "id": "base",
+          "internal_context": {
+            "model_text": "Invented internal model note w01.",
+            "witness_ids": [
+              "internal.w01.w1"
+            ],
+            "counts": {
+              "compatible": 1
+            },
+            "diagnostic_text": "Invented diagnostic w01.",
+            "hidden_note": "Invented hidden revision note w01."
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "w01.e01",
+          "tick": 0,
+          "op": "save_draft",
+          "input": {
+            "revision_id": "w01.r1",
+            "predecessor_revision_id": null,
+            "text": "Please review premise-alpha before proposed-step-alpha."
+          }
+        },
+        {
+          "id": "w01.e02",
+          "tick": 1,
+          "op": "inspect",
+          "input": {
+            "surface": "draft"
+          }
+        },
+        {
+          "id": "w01.e03",
+          "tick": 2,
+          "op": "pause",
+          "input": {}
+        },
+        {
+          "id": "w01.e04",
+          "tick": 3,
+          "op": "resume",
+          "input": {}
+        },
+        {
+          "id": "w01.e05",
+          "tick": 4,
+          "op": "submit",
+          "input": {
+            "attempt_id": "w01.a1",
+            "revision_id": "w01.r1"
+          }
+        },
+        {
+          "id": "w01.e06",
+          "tick": 5,
+          "op": "record_submission",
+          "input": {
+            "attempt_id": "w01.a1",
+            "revision_id": "w01.r1"
+          }
+        },
+        {
+          "id": "w01.e07",
+          "tick": 6,
+          "op": "request_review",
+          "input": {
+            "request_id": "w01.q1",
+            "revision_id": "w01.r1"
+          }
+        },
+        {
+          "id": "w01.e08",
+          "tick": 7,
+          "op": "record_review_acceptance",
+          "input": {
+            "acceptance_id": "w01.h1",
+            "revision_id": "w01.r1"
+          }
+        },
+        {
+          "id": "w01.e09",
+          "tick": 8,
+          "op": "record_review",
+          "input": {
+            "record_id": "w01.v1",
+            "revision_id": "w01.r1",
+            "text": "Review note for revision-one: premise-alpha remains open to correction."
+          }
+        },
+        {
+          "id": "w01.e10",
+          "tick": 10,
+          "op": "record_response",
+          "input": {
+            "record_id": "w01.b1",
+            "revision_id": "w01.r1",
+            "text": "Written response: the supplied premise can be challenged; no action is authorized."
+          }
+        },
+        {
+          "id": "w01.e11",
+          "tick": 18,
+          "op": "propose_resolution",
+          "input": {
+            "record_id": "w01.p1",
+            "revision_id": "w01.r1",
+            "text": "Proposed resolution: record the response to request-alpha for review."
+          }
+        },
+        {
+          "id": "w01.e12",
+          "tick": 20,
+          "op": "record_resolution",
+          "input": {
+            "record_id": "w01.z1",
+            "revision_id": "w01.r1",
+            "review_record_id": "w01.v1",
+            "text": "Synthetic resolution record for this challenge revision only."
+          }
+        },
+        {
+          "id": "w01.e13",
+          "tick": 21,
+          "op": "record_disagreement",
+          "input": {
+            "record_id": "w01.d1",
+            "revision_id": "w01.r1",
+            "text": "I disagree with premise-alpha and want another written review."
+          }
+        },
+        {
+          "id": "w01.e14",
+          "tick": 22,
+          "op": "inspect",
+          "input": {
+            "surface": "export"
+          }
+        }
+      ]
+    },
+    {
+      "id": "w02",
+      "title": "Correction preserves prior review without stale completion",
+      "challenge_id": "w02.challenge",
+      "requirement_ids": [
+        "WC03",
+        "WC04",
+        "WC05",
+        "WC07",
+        "WC08",
+        "WC09"
+      ],
+      "participant_need": "written_exchange",
+      "offered_route": "written_exchange",
+      "variants": [
+        {
+          "id": "base",
+          "internal_context": {
+            "model_text": "Invented internal model note w02.",
+            "witness_ids": [
+              "internal.w02.w1"
+            ],
+            "counts": {
+              "compatible": 1
+            },
+            "diagnostic_text": "Invented diagnostic w02.",
+            "hidden_note": "Invented hidden revision note w02."
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "w02.e01",
+          "tick": 0,
+          "op": "save_draft",
+          "input": {
+            "revision_id": "w02.r1",
+            "predecessor_revision_id": null,
+            "text": "Please review premise-alpha."
+          }
+        },
+        {
+          "id": "w02.e02",
+          "tick": 1,
+          "op": "inspect",
+          "input": {
+            "surface": "draft"
+          }
+        },
+        {
+          "id": "w02.e03",
+          "tick": 2,
+          "op": "submit",
+          "input": {
+            "attempt_id": "w02.a1",
+            "revision_id": "w02.r1"
+          }
+        },
+        {
+          "id": "w02.e04",
+          "tick": 3,
+          "op": "record_submission",
+          "input": {
+            "attempt_id": "w02.a1",
+            "revision_id": "w02.r1"
+          }
+        },
+        {
+          "id": "w02.e05",
+          "tick": 4,
+          "op": "record_review_acceptance",
+          "input": {
+            "acceptance_id": "w02.h1",
+            "revision_id": "w02.r1"
+          }
+        },
+        {
+          "id": "w02.e06",
+          "tick": 5,
+          "op": "record_review",
+          "input": {
+            "record_id": "w02.v1",
+            "revision_id": "w02.r1",
+            "text": "Reviewed the first submitted text."
+          }
+        },
+        {
+          "id": "w02.e07",
+          "tick": 8,
+          "op": "record_response",
+          "input": {
+            "record_id": "w02.b1",
+            "revision_id": "w02.r1",
+            "text": "Response to revision-one only."
+          }
+        },
+        {
+          "id": "w02.e08",
+          "tick": 11,
+          "op": "save_draft",
+          "input": {
+            "revision_id": "w02.r2",
+            "predecessor_revision_id": "w02.r1",
+            "text": "Correction: premise-alpha should read premise-beta."
+          }
+        },
+        {
+          "id": "w02.e09",
+          "tick": 12,
+          "op": "inspect",
+          "input": {
+            "surface": "draft"
+          }
+        },
+        {
+          "id": "w02.e10",
+          "tick": 13,
+          "op": "submit",
+          "input": {
+            "attempt_id": "w02.a2",
+            "revision_id": "w02.r2"
+          }
+        },
+        {
+          "id": "w02.e11",
+          "tick": 14,
+          "op": "record_submission",
+          "input": {
+            "attempt_id": "w02.a2",
+            "revision_id": "w02.r2"
+          }
+        },
+        {
+          "id": "w02.e12",
+          "tick": 15,
+          "op": "record_resolution",
+          "input": {
+            "record_id": "w02.z1",
+            "revision_id": "w02.r1",
+            "review_record_id": "w02.v1",
+            "text": "Attempt to close current work from the earlier review."
+          }
+        },
+        {
+          "id": "w02.e13",
+          "tick": 16,
+          "op": "inspect",
+          "input": {
+            "surface": "history"
+          }
+        },
+        {
+          "id": "w02.e14",
+          "tick": 17,
+          "op": "record_review_acceptance",
+          "input": {
+            "acceptance_id": "w02.h2",
+            "revision_id": "w02.r2"
+          }
+        },
+        {
+          "id": "w02.e15",
+          "tick": 18,
+          "op": "record_review",
+          "input": {
+            "record_id": "w02.v2",
+            "revision_id": "w02.r2",
+            "text": "Reviewed the correction in revision-two."
+          }
+        },
+        {
+          "id": "w02.e16",
+          "tick": 19,
+          "op": "record_response",
+          "input": {
+            "record_id": "w02.b2",
+            "revision_id": "w02.r2",
+            "text": "Response to revision-two; resolution remains unconfirmed."
+          }
+        },
+        {
+          "id": "w02.e17",
+          "tick": 20,
+          "op": "inspect",
+          "input": {
+            "surface": "export"
+          }
+        }
+      ]
+    },
+    {
+      "id": "w03",
+      "title": "Interrupted submission with unavailable confirmation",
+      "challenge_id": "w03.challenge",
+      "requirement_ids": [
+        "WC01",
+        "WC02",
+        "WC04",
+        "WC08",
+        "WC09"
+      ],
+      "participant_need": "written_exchange",
+      "offered_route": "written_exchange",
+      "variants": [
+        {
+          "id": "base",
+          "internal_context": {
+            "model_text": "Invented internal model note w03.",
+            "witness_ids": [
+              "internal.w03.w1"
+            ],
+            "counts": {
+              "compatible": 1
+            },
+            "diagnostic_text": "Invented diagnostic w03.",
+            "hidden_note": "Invented hidden revision note w03."
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "w03.e01",
+          "tick": 0,
+          "op": "save_draft",
+          "input": {
+            "revision_id": "w03.r1",
+            "predecessor_revision_id": null,
+            "text": "Please review request-alpha in writing."
+          }
+        },
+        {
+          "id": "w03.e02",
+          "tick": 1,
+          "op": "inspect",
+          "input": {
+            "surface": "draft"
+          }
+        },
+        {
+          "id": "w03.e03",
+          "tick": 2,
+          "op": "submit",
+          "input": {
+            "attempt_id": "w03.a1",
+            "revision_id": "w03.r1"
+          }
+        },
+        {
+          "id": "w03.e04",
+          "tick": 3,
+          "op": "pause",
+          "input": {}
+        },
+        {
+          "id": "w03.e05",
+          "tick": 4,
+          "op": "resume",
+          "input": {}
+        },
+        {
+          "id": "w03.e06",
+          "tick": 5,
+          "op": "submit",
+          "input": {
+            "attempt_id": "w03.a1",
+            "revision_id": "w03.r1"
+          }
+        },
+        {
+          "id": "w03.e07",
+          "tick": 6,
+          "op": "inspect",
+          "input": {
+            "surface": "status"
+          }
+        },
+        {
+          "id": "w03.e08",
+          "tick": 7,
+          "op": "record_submission",
+          "input": {
+            "attempt_id": "w03.a1",
+            "revision_id": "w03.r1"
+          }
+        },
+        {
+          "id": "w03.e09",
+          "tick": 8,
+          "op": "inspect",
+          "input": {
+            "surface": "export"
+          }
+        }
+      ]
+    },
+    {
+      "id": "w04",
+      "title": "Written response without accepted review",
+      "challenge_id": "w04.challenge",
+      "requirement_ids": [
+        "WC04",
+        "WC05",
+        "WC08",
+        "WC09"
+      ],
+      "participant_need": "written_exchange",
+      "offered_route": "written_exchange",
+      "variants": [
+        {
+          "id": "base",
+          "internal_context": {
+            "model_text": "Invented internal model note w04.",
+            "witness_ids": [
+              "internal.w04.w1"
+            ],
+            "counts": {
+              "compatible": 1
+            },
+            "diagnostic_text": "Invented diagnostic w04.",
+            "hidden_note": "Invented hidden revision note w04."
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "w04.e01",
+          "tick": 0,
+          "op": "save_draft",
+          "input": {
+            "revision_id": "w04.r1",
+            "predecessor_revision_id": null,
+            "text": "Please seek review of premise-alpha."
+          }
+        },
+        {
+          "id": "w04.e02",
+          "tick": 1,
+          "op": "inspect",
+          "input": {
+            "surface": "draft"
+          }
+        },
+        {
+          "id": "w04.e03",
+          "tick": 2,
+          "op": "submit",
+          "input": {
+            "attempt_id": "w04.a1",
+            "revision_id": "w04.r1"
+          }
+        },
+        {
+          "id": "w04.e04",
+          "tick": 3,
+          "op": "record_submission",
+          "input": {
+            "attempt_id": "w04.a1",
+            "revision_id": "w04.r1"
+          }
+        },
+        {
+          "id": "w04.e05",
+          "tick": 4,
+          "op": "request_review",
+          "input": {
+            "request_id": "w04.q1",
+            "revision_id": "w04.r1"
+          }
+        },
+        {
+          "id": "w04.e06",
+          "tick": 8,
+          "op": "record_response",
+          "input": {
+            "record_id": "w04.b1",
+            "revision_id": "w04.r1",
+            "text": "Written reply received; review acceptance is not recorded."
+          }
+        },
+        {
+          "id": "w04.e07",
+          "tick": 11,
+          "op": "advance_tick",
+          "input": {}
+        },
+        {
+          "id": "w04.e08",
+          "tick": 12,
+          "op": "inspect",
+          "input": {
+            "surface": "status"
+          }
+        },
+        {
+          "id": "w04.e09",
+          "tick": 30,
+          "op": "inspect",
+          "input": {
+            "surface": "export"
+          }
+        }
+      ]
+    },
+    {
+      "id": "w05",
+      "title": "Timely response with unconfirmed resolution",
+      "challenge_id": "w05.challenge",
+      "requirement_ids": [
+        "WC04",
+        "WC05",
+        "WC08",
+        "WC09"
+      ],
+      "participant_need": "written_exchange",
+      "offered_route": "written_exchange",
+      "variants": [
+        {
+          "id": "base",
+          "internal_context": {
+            "model_text": "Invented internal model note w05.",
+            "witness_ids": [
+              "internal.w05.w1"
+            ],
+            "counts": {
+              "compatible": 1
+            },
+            "diagnostic_text": "Invented diagnostic w05.",
+            "hidden_note": "Invented hidden revision note w05."
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "w05.e01",
+          "tick": 0,
+          "op": "save_draft",
+          "input": {
+            "revision_id": "w05.r1",
+            "predecessor_revision_id": null,
+            "text": "Please clarify how request-alpha will be resolved."
+          }
+        },
+        {
+          "id": "w05.e02",
+          "tick": 1,
+          "op": "inspect",
+          "input": {
+            "surface": "draft"
+          }
+        },
+        {
+          "id": "w05.e03",
+          "tick": 2,
+          "op": "submit",
+          "input": {
+            "attempt_id": "w05.a1",
+            "revision_id": "w05.r1"
+          }
+        },
+        {
+          "id": "w05.e04",
+          "tick": 3,
+          "op": "record_submission",
+          "input": {
+            "attempt_id": "w05.a1",
+            "revision_id": "w05.r1"
+          }
+        },
+        {
+          "id": "w05.e05",
+          "tick": 4,
+          "op": "request_review",
+          "input": {
+            "request_id": "w05.q1",
+            "revision_id": "w05.r1"
+          }
+        },
+        {
+          "id": "w05.e06",
+          "tick": 5,
+          "op": "record_review_acceptance",
+          "input": {
+            "acceptance_id": "w05.h1",
+            "revision_id": "w05.r1"
+          }
+        },
+        {
+          "id": "w05.e07",
+          "tick": 6,
+          "op": "record_review",
+          "input": {
+            "record_id": "w05.v1",
+            "revision_id": "w05.r1",
+            "text": "Review recorded; resolution evidence is unavailable."
+          }
+        },
+        {
+          "id": "w05.e08",
+          "tick": 10,
+          "op": "record_response",
+          "input": {
+            "record_id": "w05.b1",
+            "revision_id": "w05.r1",
+            "text": "Written response by the response target; resolution is not confirmed."
+          }
+        },
+        {
+          "id": "w05.e09",
+          "tick": 20,
+          "op": "advance_tick",
+          "input": {}
+        },
+        {
+          "id": "w05.e10",
+          "tick": 21,
+          "op": "inspect",
+          "input": {
+            "surface": "status"
+          }
+        },
+        {
+          "id": "w05.e11",
+          "tick": 30,
+          "op": "inspect",
+          "input": {
+            "surface": "export"
+          }
+        }
+      ]
+    },
+    {
+      "id": "w06",
+      "title": "Declared disclosure projection across two hidden contexts",
+      "challenge_id": "w06.challenge",
+      "requirement_ids": [
+        "WC03",
+        "WC06",
+        "WC07",
+        "WC08",
+        "WC09"
+      ],
+      "participant_need": "written_exchange",
+      "offered_route": "written_exchange",
+      "variants": [
+        {
+          "id": "hidden_alpha",
+          "internal_context": {
+            "model_text": "hidden-alpha-model",
+            "witness_ids": [
+              "hidden.alpha.w1"
+            ],
+            "counts": {
+              "compatible": 1
+            },
+            "diagnostic_text": "hidden-alpha-diagnostic",
+            "hidden_note": "hidden-alpha-prior-note"
+          }
+        },
+        {
+          "id": "hidden_beta",
+          "internal_context": {
+            "model_text": "hidden-beta-model-with-different-length",
+            "witness_ids": [
+              "hidden.beta.w1",
+              "hidden.beta.w2"
+            ],
+            "counts": {
+              "compatible": 2
+            },
+            "diagnostic_text": "hidden-beta-diagnostic-with-different-length",
+            "hidden_note": "hidden-beta-prior-note-with-different-length"
+          }
+        }
+      ],
+      "events": [
+        {
+          "id": "w06.e01",
+          "tick": 0,
+          "op": "save_draft",
+          "input": {
+            "revision_id": "w06.r1",
+            "predecessor_revision_id": null,
+            "text": "Please explain the public premise-alpha summary."
+          }
+        },
+        {
+          "id": "w06.e02",
+          "tick": 1,
+          "op": "inspect",
+          "input": {
+            "surface": "draft"
+          }
+        },
+        {
+          "id": "w06.e03",
+          "tick": 2,
+          "op": "submit",
+          "input": {
+            "attempt_id": "w06.a1",
+            "revision_id": "w06.r1"
+          }
+        },
+        {
+          "id": "w06.e04",
+          "tick": 3,
+          "op": "record_submission",
+          "input": {
+            "attempt_id": "w06.a1",
+            "revision_id": "w06.r1"
+          }
+        },
+        {
+          "id": "w06.e05",
+          "tick": 4,
+          "op": "request_review",
+          "input": {
+            "request_id": "w06.q1",
+            "revision_id": "w06.r1"
+          }
+        },
+        {
+          "id": "w06.e06",
+          "tick": 5,
+          "op": "record_review_acceptance",
+          "input": {
+            "acceptance_id": "w06.h1",
+            "revision_id": "w06.r1"
+          }
+        },
+        {
+          "id": "w06.e07",
+          "tick": 6,
+          "op": "record_review",
+          "input": {
+            "record_id": "w06.v1",
+            "revision_id": "w06.r1",
+            "text": "Review uses only the declared public challenge text."
+          }
+        },
+        {
+          "id": "w06.e08",
+          "tick": 8,
+          "op": "record_response",
+          "input": {
+            "record_id": "w06.b1",
+            "revision_id": "w06.r1",
+            "text": "Public written response to premise-alpha."
+          }
+        },
+        {
+          "id": "w06.e09",
+          "tick": 9,
+          "op": "inspect",
+          "input": {
+            "surface": "internal"
+          }
+        },
+        {
+          "id": "w06.e10",
+          "tick": 10,
+          "op": "inspect",
+          "input": {
+            "surface": "history"
+          }
+        },
+        {
+          "id": "w06.e11",
+          "tick": 11,
+          "op": "inspect",
+          "input": {
+            "surface": "export"
+          }
+        },
+        {
+          "id": "w06.e12",
+          "tick": 12,
+          "op": "inspect",
+          "input": {
+            "surface": "export"
+          }
+        },
+        {
+          "id": "w06.e13",
+          "tick": 13,
+          "op": "save_draft",
+          "input": {
+            "revision_id": "w06.r2",
+            "predecessor_revision_id": "w06.r1",
+            "text": "Correction: please also address public premise-beta."
+          }
+        },
+        {
+          "id": "w06.e14",
+          "tick": 14,
+          "op": "inspect",
+          "input": {
+            "surface": "draft"
+          }
+        },
+        {
+          "id": "w06.e15",
+          "tick": 15,
+          "op": "inspect",
+          "input": {
+            "surface": "export"
+          }
+        }
+      ]
+    }
+  ],
+  "authorship": {
+    "conceptual_direction_and_authorship": "R.A. Jacob Martone",
+    "development": "AI-assisted authorship"
+  }
+}

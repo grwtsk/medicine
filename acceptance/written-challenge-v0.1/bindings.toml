@@ -1,0 +1,35 @@
+schema = "grwtsk.medicine.written-challenge-bindings/1"
+suite_id = "written-challenge-v0.1"
+artifact_kind = "authored-source-binding"
+expected_case_count = 6
+expected_variant_count = 7
+expected_authored_event_count = 75
+expected_authored_checkpoint_count = 31
+expected_instantiated_checkpoint_count = 39
+baseline_repository_revision = "02aada9bdc9eb7e66a7c44547f298b141f3967ca"
+repository_revision = "Supplied externally; this record does not embed its own containing commit."
+origin_and_authority = "These hashes identify authored source bytes; they do not authenticate origin, establish adequacy, appoint a function, or authorize action."
+execution_outcomes = "No interaction execution, persistence receipt, operational result, or professional-review outcome is contained in this source package."
+conceptual_direction = "R.A. Jacob Martone"
+development = "AI-assisted authorship"
+
+[[inputs]]
+path = "specification.md"
+mode = "100644"
+sha256 = "5093164364c086fdd76f306510d48f425df93eaa0cb3e1ae9bb027ddd7f44009"
+git_blob = "0ea9349591764606a7f5c1f9c614252a8356bc22"
+byte_count = 30757
+
+[[inputs]]
+path = "scenarios.json"
+mode = "100644"
+sha256 = "170306bcfc9ae20bf79818c8841257b3b605a18e771a35c05d972004291d011f"
+git_blob = "cd87ac057e2bc0145b63e4649c9b759375701047"
+byte_count = 26139
+
+[[inputs]]
+path = "expectations.json"
+mode = "100644"
+sha256 = "a5855d7f34e1dd9d063227e5bf0ef54a29aa1cf0617c9a8e45698182c7679baf"
+git_blob = "59420993c0c06aca4f9220159d93e6c592ab636c"
+byte_count = 144454

@@ -1,0 +1,136 @@
+{
+  "authored_inputs": [
+    {
+      "byte_count": 30757,
+      "git_blob": "0ea9349591764606a7f5c1f9c614252a8356bc22",
+      "mode": "100644",
+      "path": "acceptance/written-challenge-v0.1/specification.md",
+      "sha256": "5093164364c086fdd76f306510d48f425df93eaa0cb3e1ae9bb027ddd7f44009"
+    },
+    {
+      "byte_count": 26139,
+      "git_blob": "cd87ac057e2bc0145b63e4649c9b759375701047",
+      "mode": "100644",
+      "path": "acceptance/written-challenge-v0.1/scenarios.json",
+      "sha256": "170306bcfc9ae20bf79818c8841257b3b605a18e771a35c05d972004291d011f"
+    },
+    {
+      "byte_count": 144454,
+      "git_blob": "59420993c0c06aca4f9220159d93e6c592ab636c",
+      "mode": "100644",
+      "path": "acceptance/written-challenge-v0.1/expectations.json",
+      "sha256": "a5855d7f34e1dd9d063227e5bf0ef54a29aa1cf0617c9a8e45698182c7679baf"
+    },
+    {
+      "byte_count": 1491,
+      "git_blob": "a9731de2396d7300e0f1cd63493e741063a345b1",
+      "mode": "100644",
+      "path": "acceptance/written-challenge-v0.1/bindings.toml",
+      "sha256": "61a6c9d3e82b332a0a6e113ea23de80e83bdc8231fd172999361274661915d50"
+    }
+  ],
+  "authorship": {
+    "conceptual_direction_and_authorship": "R.A. Jacob Martone",
+    "development": "AI-assisted source projection"
+  },
+  "baseline_expectation": {
+    "baseline_id": "b01",
+    "communication_predicate_outcomes": {
+      "A": "supported",
+      "H": "supported",
+      "R": "supported",
+      "Tr": "supported",
+      "Ts": "supported",
+      "U": "supported"
+    },
+    "interaction_outcome": "challenge_route_unusable",
+    "overall_acceptance": "not_established",
+    "source_case_id": "c08"
+  },
+  "inputs": [
+    {
+      "byte_count": 2078,
+      "input_id": "w01.base.transcript",
+      "raw_utf8": "{\"challenge_id\":\"w01.challenge\",\"events\":[{\"id\":\"w01.e01\",\"input\":{\"predecessor_revision_id\":null,\"revision_id\":\"w01.r1\",\"text\":\"Please review premise-alpha before proposed-step-alpha.\"},\"op\":\"save_draft\",\"tick\":0},{\"id\":\"w01.e02\",\"input\":{\"surface\":\"draft\"},\"op\":\"inspect\",\"tick\":1},{\"id\":\"w01.e03\",\"input\":{},\"op\":\"pause\",\"tick\":2},{\"id\":\"w01.e04\",\"input\":{},\"op\":\"resume\",\"tick\":3},{\"id\":\"w01.e05\",\"input\":{\"attempt_id\":\"w01.a1\",\"revision_id\":\"w01.r1\"},\"op\":\"submit\",\"tick\":4},{\"id\":\"w01.e06\",\"input\":{\"attempt_id\":\"w01.a1\",\"revision_id\":\"w01.r1\"},\"op\":\"record_submission\",\"tick\":5},{\"id\":\"w01.e07\",\"input\":{\"request_id\":\"w01.q1\",\"revision_id\":\"w01.r1\"},\"op\":\"request_review\",\"tick\":6},{\"id\":\"w01.e08\",\"input\":{\"acceptance_id\":\"w01.h1\",\"revision_id\":\"w01.r1\"},\"op\":\"record_review_acceptance\",\"tick\":7},{\"id\":\"w01.e09\",\"input\":{\"record_id\":\"w01.v1\",\"revision_id\":\"w01.r1\",\"text\":\"Review note for revision-one: premise-alpha remains open to correction.\"},\"op\":\"record_review\",\"tick\":8},{\"id\":\"w01.e10\",\"input\":{\"record_id\":\"w01.b1\",\"revision_id\":\"w01.r1\",\"text\":\"Written response: the supplied premise can be challenged; no action is authorized.\"},\"op\":\"record_response\",\"tick\":10},{\"id\":\"w01.e11\",\"input\":{\"record_id\":\"w01.p1\",\"revision_id\":\"w01.r1\",\"text\":\"Proposed resolution: record the response to request-alpha for review.\"},\"op\":\"propose_resolution\",\"tick\":18},{\"id\":\"w01.e12\",\"input\":{\"record_id\":\"w01.z1\",\"review_record_id\":\"w01.v1\",\"revision_id\":\"w01.r1\",\"text\":\"Synthetic resolution record for this challenge revision only.\"},\"op\":\"record_resolution\",\"tick\":20},{\"id\":\"w01.e13\",\"input\":{\"record_id\":\"w01.d1\",\"revision_id\":\"w01.r1\",\"text\":\"I disagree with premise-alpha and want another written review.\"},\"op\":\"record_disagreement\",\"tick\":21},{\"id\":\"w01.e14\",\"input\":{\"surface\":\"export\"},\"op\":\"inspect\",\"tick\":22}],\"schema\":\"noe.written-challenge-transcript/1\",\"timing\":{\"correction_resets_targets\":false,\"episode\":\"challenge-relative\",\"resolution_target\":20,\"response_target\":10,\"review_cutoff\":30,\"start\":0,\"target_comparison\":\"inclusive\",\"unit\":\"synthetic_tick\"}}\n",
+      "sha256": "ad8d764a80ebffde70b7b5dbd6548e125ae998a6630ccd285b6fdff541718aab",
+      "source_case_id": "w01",
+      "source_variant_id": "base"
+    },
+    {
+      "byte_count": 2343,
+      "input_id": "w02.base.transcript",
+      "raw_utf8": "{\"challenge_id\":\"w02.challenge\",\"events\":[{\"id\":\"w02.e01\",\"input\":{\"predecessor_revision_id\":null,\"revision_id\":\"w02.r1\",\"text\":\"Please review premise-alpha.\"},\"op\":\"save_draft\",\"tick\":0},{\"id\":\"w02.e02\",\"input\":{\"surface\":\"draft\"},\"op\":\"inspect\",\"tick\":1},{\"id\":\"w02.e03\",\"input\":{\"attempt_id\":\"w02.a1\",\"revision_id\":\"w02.r1\"},\"op\":\"submit\",\"tick\":2},{\"id\":\"w02.e04\",\"input\":{\"attempt_id\":\"w02.a1\",\"revision_id\":\"w02.r1\"},\"op\":\"record_submission\",\"tick\":3},{\"id\":\"w02.e05\",\"input\":{\"acceptance_id\":\"w02.h1\",\"revision_id\":\"w02.r1\"},\"op\":\"record_review_acceptance\",\"tick\":4},{\"id\":\"w02.e06\",\"input\":{\"record_id\":\"w02.v1\",\"revision_id\":\"w02.r1\",\"text\":\"Reviewed the first submitted text.\"},\"op\":\"record_review\",\"tick\":5},{\"id\":\"w02.e07\",\"input\":{\"record_id\":\"w02.b1\",\"revision_id\":\"w02.r1\",\"text\":\"Response to revision-one only.\"},\"op\":\"record_response\",\"tick\":8},{\"id\":\"w02.e08\",\"input\":{\"predecessor_revision_id\":\"w02.r1\",\"revision_id\":\"w02.r2\",\"text\":\"Correction: premise-alpha should read premise-beta.\"},\"op\":\"save_draft\",\"tick\":11},{\"id\":\"w02.e09\",\"input\":{\"surface\":\"draft\"},\"op\":\"inspect\",\"tick\":12},{\"id\":\"w02.e10\",\"input\":{\"attempt_id\":\"w02.a2\",\"revision_id\":\"w02.r2\"},\"op\":\"submit\",\"tick\":13},{\"id\":\"w02.e11\",\"input\":{\"attempt_id\":\"w02.a2\",\"revision_id\":\"w02.r2\"},\"op\":\"record_submission\",\"tick\":14},{\"id\":\"w02.e12\",\"input\":{\"record_id\":\"w02.z1\",\"review_record_id\":\"w02.v1\",\"revision_id\":\"w02.r1\",\"text\":\"Attempt to close current work from the earlier review.\"},\"op\":\"record_resolution\",\"tick\":15},{\"id\":\"w02.e13\",\"input\":{\"surface\":\"history\"},\"op\":\"inspect\",\"tick\":16},{\"id\":\"w02.e14\",\"input\":{\"acceptance_id\":\"w02.h2\",\"revision_id\":\"w02.r2\"},\"op\":\"record_review_acceptance\",\"tick\":17},{\"id\":\"w02.e15\",\"input\":{\"record_id\":\"w02.v2\",\"revision_id\":\"w02.r2\",\"text\":\"Reviewed the correction in revision-two.\"},\"op\":\"record_review\",\"tick\":18},{\"id\":\"w02.e16\",\"input\":{\"record_id\":\"w02.b2\",\"revision_id\":\"w02.r2\",\"text\":\"Response to revision-two; resolution remains unconfirmed.\"},\"op\":\"record_response\",\"tick\":19},{\"id\":\"w02.e17\",\"input\":{\"surface\":\"export\"},\"op\":\"inspect\",\"tick\":20}],\"schema\":\"noe.written-challenge-transcript/1\",\"timing\":{\"correction_resets_targets\":false,\"episode\":\"challenge-relative\",\"resolution_target\":20,\"response_target\":10,\"review_cutoff\":30,\"start\":0,\"target_comparison\":\"inclusive\",\"unit\":\"synthetic_tick\"}}\n",
+      "sha256": "2aa863f32f09e18ac5e5ff1d564d9828641d70e953f89c9895b52783d5ee9039",
+      "source_case_id": "w02",
+      "source_variant_id": "base"
+    },
+    {
+      "byte_count": 1058,
+      "input_id": "w03.base.transcript",
+      "raw_utf8": "{\"challenge_id\":\"w03.challenge\",\"events\":[{\"id\":\"w03.e01\",\"input\":{\"predecessor_revision_id\":null,\"revision_id\":\"w03.r1\",\"text\":\"Please review request-alpha in writing.\"},\"op\":\"save_draft\",\"tick\":0},{\"id\":\"w03.e02\",\"input\":{\"surface\":\"draft\"},\"op\":\"inspect\",\"tick\":1},{\"id\":\"w03.e03\",\"input\":{\"attempt_id\":\"w03.a1\",\"revision_id\":\"w03.r1\"},\"op\":\"submit\",\"tick\":2},{\"id\":\"w03.e04\",\"input\":{},\"op\":\"pause\",\"tick\":3},{\"id\":\"w03.e05\",\"input\":{},\"op\":\"resume\",\"tick\":4},{\"id\":\"w03.e06\",\"input\":{\"attempt_id\":\"w03.a1\",\"revision_id\":\"w03.r1\"},\"op\":\"submit\",\"tick\":5},{\"id\":\"w03.e07\",\"input\":{\"surface\":\"status\"},\"op\":\"inspect\",\"tick\":6},{\"id\":\"w03.e08\",\"input\":{\"attempt_id\":\"w03.a1\",\"revision_id\":\"w03.r1\"},\"op\":\"record_submission\",\"tick\":7},{\"id\":\"w03.e09\",\"input\":{\"surface\":\"export\"},\"op\":\"inspect\",\"tick\":8}],\"schema\":\"noe.written-challenge-transcript/1\",\"timing\":{\"correction_resets_targets\":false,\"episode\":\"challenge-relative\",\"resolution_target\":20,\"response_target\":10,\"review_cutoff\":30,\"start\":0,\"target_comparison\":\"inclusive\",\"unit\":\"synthetic_tick\"}}\n",
+      "sha256": "d5450d312cfde7125617c33d7507074365208d7555180458afa0ab1c300cb5b8",
+      "source_case_id": "w03",
+      "source_variant_id": "base"
+    },
+    {
+      "byte_count": 1193,
+      "input_id": "w04.base.transcript",
+      "raw_utf8": "{\"challenge_id\":\"w04.challenge\",\"events\":[{\"id\":\"w04.e01\",\"input\":{\"predecessor_revision_id\":null,\"revision_id\":\"w04.r1\",\"text\":\"Please seek review of premise-alpha.\"},\"op\":\"save_draft\",\"tick\":0},{\"id\":\"w04.e02\",\"input\":{\"surface\":\"draft\"},\"op\":\"inspect\",\"tick\":1},{\"id\":\"w04.e03\",\"input\":{\"attempt_id\":\"w04.a1\",\"revision_id\":\"w04.r1\"},\"op\":\"submit\",\"tick\":2},{\"id\":\"w04.e04\",\"input\":{\"attempt_id\":\"w04.a1\",\"revision_id\":\"w04.r1\"},\"op\":\"record_submission\",\"tick\":3},{\"id\":\"w04.e05\",\"input\":{\"request_id\":\"w04.q1\",\"revision_id\":\"w04.r1\"},\"op\":\"request_review\",\"tick\":4},{\"id\":\"w04.e06\",\"input\":{\"record_id\":\"w04.b1\",\"revision_id\":\"w04.r1\",\"text\":\"Written reply received; review acceptance is not recorded.\"},\"op\":\"record_response\",\"tick\":8},{\"id\":\"w04.e07\",\"input\":{},\"op\":\"advance_tick\",\"tick\":11},{\"id\":\"w04.e08\",\"input\":{\"surface\":\"status\"},\"op\":\"inspect\",\"tick\":12},{\"id\":\"w04.e09\",\"input\":{\"surface\":\"export\"},\"op\":\"inspect\",\"tick\":30}],\"schema\":\"noe.written-challenge-transcript/1\",\"timing\":{\"correction_resets_targets\":false,\"episode\":\"challenge-relative\",\"resolution_target\":20,\"response_target\":10,\"review_cutoff\":30,\"start\":0,\"target_comparison\":\"inclusive\",\"unit\":\"synthetic_tick\"}}\n",
+      "sha256": "c3ce49564564e29780bad161a7a904dc1fb5cb7a155872057b6ffa6e154031bc",
+      "source_case_id": "w04",
+      "source_variant_id": "base"
+    },
+    {
+      "byte_count": 1498,
+      "input_id": "w05.base.transcript",
+      "raw_utf8": "{\"challenge_id\":\"w05.challenge\",\"events\":[{\"id\":\"w05.e01\",\"input\":{\"predecessor_revision_id\":null,\"revision_id\":\"w05.r1\",\"text\":\"Please clarify how request-alpha will be resolved.\"},\"op\":\"save_draft\",\"tick\":0},{\"id\":\"w05.e02\",\"input\":{\"surface\":\"draft\"},\"op\":\"inspect\",\"tick\":1},{\"id\":\"w05.e03\",\"input\":{\"attempt_id\":\"w05.a1\",\"revision_id\":\"w05.r1\"},\"op\":\"submit\",\"tick\":2},{\"id\":\"w05.e04\",\"input\":{\"attempt_id\":\"w05.a1\",\"revision_id\":\"w05.r1\"},\"op\":\"record_submission\",\"tick\":3},{\"id\":\"w05.e05\",\"input\":{\"request_id\":\"w05.q1\",\"revision_id\":\"w05.r1\"},\"op\":\"request_review\",\"tick\":4},{\"id\":\"w05.e06\",\"input\":{\"acceptance_id\":\"w05.h1\",\"revision_id\":\"w05.r1\"},\"op\":\"record_review_acceptance\",\"tick\":5},{\"id\":\"w05.e07\",\"input\":{\"record_id\":\"w05.v1\",\"revision_id\":\"w05.r1\",\"text\":\"Review recorded; resolution evidence is unavailable.\"},\"op\":\"record_review\",\"tick\":6},{\"id\":\"w05.e08\",\"input\":{\"record_id\":\"w05.b1\",\"revision_id\":\"w05.r1\",\"text\":\"Written response by the response target; resolution is not confirmed.\"},\"op\":\"record_response\",\"tick\":10},{\"id\":\"w05.e09\",\"input\":{},\"op\":\"advance_tick\",\"tick\":20},{\"id\":\"w05.e10\",\"input\":{\"surface\":\"status\"},\"op\":\"inspect\",\"tick\":21},{\"id\":\"w05.e11\",\"input\":{\"surface\":\"export\"},\"op\":\"inspect\",\"tick\":30}],\"schema\":\"noe.written-challenge-transcript/1\",\"timing\":{\"correction_resets_targets\":false,\"episode\":\"challenge-relative\",\"resolution_target\":20,\"response_target\":10,\"review_cutoff\":30,\"start\":0,\"target_comparison\":\"inclusive\",\"unit\":\"synthetic_tick\"}}\n",
+      "sha256": "556e2288b36cff727c294481c7f40668c75cc9b02d4dc26b8c0e0da162e19225",
+      "source_case_id": "w05",
+      "source_variant_id": "base"
+    },
+    {
+      "byte_count": 1869,
+      "input_id": "w06.hidden_alpha.transcript",
+      "raw_utf8": "{\"challenge_id\":\"w06.challenge\",\"events\":[{\"id\":\"w06.e01\",\"input\":{\"predecessor_revision_id\":null,\"revision_id\":\"w06.r1\",\"text\":\"Please explain the public premise-alpha summary.\"},\"op\":\"save_draft\",\"tick\":0},{\"id\":\"w06.e02\",\"input\":{\"surface\":\"draft\"},\"op\":\"inspect\",\"tick\":1},{\"id\":\"w06.e03\",\"input\":{\"attempt_id\":\"w06.a1\",\"revision_id\":\"w06.r1\"},\"op\":\"submit\",\"tick\":2},{\"id\":\"w06.e04\",\"input\":{\"attempt_id\":\"w06.a1\",\"revision_id\":\"w06.r1\"},\"op\":\"record_submission\",\"tick\":3},{\"id\":\"w06.e05\",\"input\":{\"request_id\":\"w06.q1\",\"revision_id\":\"w06.r1\"},\"op\":\"request_review\",\"tick\":4},{\"id\":\"w06.e06\",\"input\":{\"acceptance_id\":\"w06.h1\",\"revision_id\":\"w06.r1\"},\"op\":\"record_review_acceptance\",\"tick\":5},{\"id\":\"w06.e07\",\"input\":{\"record_id\":\"w06.v1\",\"revision_id\":\"w06.r1\",\"text\":\"Review uses only the declared public challenge text.\"},\"op\":\"record_review\",\"tick\":6},{\"id\":\"w06.e08\",\"input\":{\"record_id\":\"w06.b1\",\"revision_id\":\"w06.r1\",\"text\":\"Public written response to premise-alpha.\"},\"op\":\"record_response\",\"tick\":8},{\"id\":\"w06.e09\",\"input\":{\"surface\":\"internal\"},\"op\":\"inspect\",\"tick\":9},{\"id\":\"w06.e10\",\"input\":{\"surface\":\"history\"},\"op\":\"inspect\",\"tick\":10},{\"id\":\"w06.e11\",\"input\":{\"surface\":\"export\"},\"op\":\"inspect\",\"tick\":11},{\"id\":\"w06.e12\",\"input\":{\"surface\":\"export\"},\"op\":\"inspect\",\"tick\":12},{\"id\":\"w06.e13\",\"input\":{\"predecessor_revision_id\":\"w06.r1\",\"revision_id\":\"w06.r2\",\"text\":\"Correction: please also address public premise-beta.\"},\"op\":\"save_draft\",\"tick\":13},{\"id\":\"w06.e14\",\"input\":{\"surface\":\"draft\"},\"op\":\"inspect\",\"tick\":14},{\"id\":\"w06.e15\",\"input\":{\"surface\":\"export\"},\"op\":\"inspect\",\"tick\":15}],\"schema\":\"noe.written-challenge-transcript/1\",\"timing\":{\"correction_resets_targets\":false,\"episode\":\"challenge-relative\",\"resolution_target\":20,\"response_target\":10,\"review_cutoff\":30,\"start\":0,\"target_comparison\":\"inclusive\",\"unit\":\"synthetic_tick\"}}\n",
+      "sha256": "ed4e271b993da4dcfabe602af4ee2c87155163dfc6f7a5b8454baaf537dc0d3f",
+      "source_case_id": "w06",
+      "source_variant_id": "hidden_alpha"
+    },
+    {
+      "byte_count": 1869,
+      "input_id": "w06.hidden_beta.transcript",
+      "raw_utf8": "{\"challenge_id\":\"w06.challenge\",\"events\":[{\"id\":\"w06.e01\",\"input\":{\"predecessor_revision_id\":null,\"revision_id\":\"w06.r1\",\"text\":\"Please explain the public premise-alpha summary.\"},\"op\":\"save_draft\",\"tick\":0},{\"id\":\"w06.e02\",\"input\":{\"surface\":\"draft\"},\"op\":\"inspect\",\"tick\":1},{\"id\":\"w06.e03\",\"input\":{\"attempt_id\":\"w06.a1\",\"revision_id\":\"w06.r1\"},\"op\":\"submit\",\"tick\":2},{\"id\":\"w06.e04\",\"input\":{\"attempt_id\":\"w06.a1\",\"revision_id\":\"w06.r1\"},\"op\":\"record_submission\",\"tick\":3},{\"id\":\"w06.e05\",\"input\":{\"request_id\":\"w06.q1\",\"revision_id\":\"w06.r1\"},\"op\":\"request_review\",\"tick\":4},{\"id\":\"w06.e06\",\"input\":{\"acceptance_id\":\"w06.h1\",\"revision_id\":\"w06.r1\"},\"op\":\"record_review_acceptance\",\"tick\":5},{\"id\":\"w06.e07\",\"input\":{\"record_id\":\"w06.v1\",\"revision_id\":\"w06.r1\",\"text\":\"Review uses only the declared public challenge text.\"},\"op\":\"record_review\",\"tick\":6},{\"id\":\"w06.e08\",\"input\":{\"record_id\":\"w06.b1\",\"revision_id\":\"w06.r1\",\"text\":\"Public written response to premise-alpha.\"},\"op\":\"record_response\",\"tick\":8},{\"id\":\"w06.e09\",\"input\":{\"surface\":\"internal\"},\"op\":\"inspect\",\"tick\":9},{\"id\":\"w06.e10\",\"input\":{\"surface\":\"history\"},\"op\":\"inspect\",\"tick\":10},{\"id\":\"w06.e11\",\"input\":{\"surface\":\"export\"},\"op\":\"inspect\",\"tick\":11},{\"id\":\"w06.e12\",\"input\":{\"surface\":\"export\"},\"op\":\"inspect\",\"tick\":12},{\"id\":\"w06.e13\",\"input\":{\"predecessor_revision_id\":\"w06.r1\",\"revision_id\":\"w06.r2\",\"text\":\"Correction: please also address public premise-beta.\"},\"op\":\"save_draft\",\"tick\":13},{\"id\":\"w06.e14\",\"input\":{\"surface\":\"draft\"},\"op\":\"inspect\",\"tick\":14},{\"id\":\"w06.e15\",\"input\":{\"surface\":\"export\"},\"op\":\"inspect\",\"tick\":15}],\"schema\":\"noe.written-challenge-transcript/1\",\"timing\":{\"correction_resets_targets\":false,\"episode\":\"challenge-relative\",\"resolution_target\":20,\"response_target\":10,\"review_cutoff\":30,\"start\":0,\"target_comparison\":\"inclusive\",\"unit\":\"synthetic_tick\"}}\n",
+      "sha256": "ed4e271b993da4dcfabe602af4ee2c87155163dfc6f7a5b8454baaf537dc0d3f",
+      "source_case_id": "w06",
+      "source_variant_id": "hidden_beta"
+    }
+  ],
+  "mapping": {
+    "authored_projection_schema": "grwtsk.medicine.written-challenge-visible-projection/1",
+    "engine_execution_performed": false,
+    "excluded_case_fields": [
+      "title",
+      "requirement_ids",
+      "participant_need",
+      "offered_route"
+    ],
+    "excluded_internal_fields": [
+      "model_text",
+      "witness_ids",
+      "counts",
+      "diagnostic_text",
+      "hidden_note"
+    ],
+    "excluded_variant_fields": [
+      "internal_context"
+    ],
+    "expectations_generated_by_engine": false,
+    "generic_projection_schema": "noe.written-challenge-visible-projection/1",
+    "hidden_context_qualification": "The two hidden variants map to identical public transcript bytes. Comparison establishes bounded projection agreement after this explicit omission; the generic engine does not consume the omitted context.",
+    "method": "Exact source selection; copy timing and events; copy authored outcomes and snapshots; translate only projection schema tag."
+  },
+  "schema": "grwtsk.medicine.written-challenge-replay-vectors/1",
+  "source_repository": "grwtsk/medicine",
+  "source_revision": "2337d11ce9f50a8a075723254f1a38bf014cd84d",
+  "suite_id": "written-challenge-v0.1"
+}
