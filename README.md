@@ -1,0 +1,18 @@
+# Medical acceptance and implementation evidence
+
+This repository tracks medical-specific requirements and acceptance work connecting mathematical reasoning with inspectable implementations.
+
+| Repository | Responsibility |
+| --- | --- |
+| [grwtsk/math](https://github.com/grwtsk/math) | Mathematical definitions, proofs and static verification specifications |
+| [grwtsk/noeaaeue](https://github.com/grwtsk/noeaaeue) | Generic implementations, execution evidence and source reconciliation |
+| grwtsk/medicine | Medical meanings, synthetic scenarios, accessible participation, disclosure and continuity obligations |
+
+## Current work
+
+- [Finite observation coordination](https://github.com/grwtsk/medicine/issues/1)
+- [Accessible communication under missing acknowledgment](https://github.com/grwtsk/medicine/issues/2)
+
+Current scenario work is synthetic. Authored requirements, computational checks, formal verification, professional review and permission to act are recorded separately. Classifier agreement does not by itself complete medical acceptance.
+
+Conceptual direction and authorship: R.A. Jacob Martone. Development with AI assistance.
