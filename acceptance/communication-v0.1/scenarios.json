@@ -1,0 +1,703 @@
+{
+  "schema": "grwtsk.medicine.communication-scenarios/1",
+  "suite_id": "communication-v0.1",
+  "artifact_kind": "authored-synthetic-specification",
+  "scope": "supplied-finite-model",
+  "predicate_order": [
+    "R",
+    "U",
+    "A",
+    "H",
+    "Tr",
+    "Ts"
+  ],
+  "predicates": [
+    {
+      "id": "R",
+      "claim_id": "communication.receipt.v1",
+      "meaning": "The intended recipient received the specified synthetic communication by the review cutoff.",
+      "evidence_field": "recipient_receipt_tick",
+      "evidence_source": "Stipulated synthetic recipient-receipt event; endpoint delivery and acknowledgment are separate observations.",
+      "rule": "The qualifying event tick is present and no later than review_cutoff."
+    },
+    {
+      "id": "U",
+      "claim_id": "communication.understanding-evidence.v1",
+      "meaning": "The specified evidence of understanding is present by the review cutoff; this does not assert a mental state.",
+      "evidence_field": "understanding_evidence_tick",
+      "evidence_source": "Stipulated written restatement containing the synthetic request token request-alpha and next-step token step-alpha.",
+      "rule": "The qualifying evidence tick is present and no later than review_cutoff; the fixture stipulates that the required tokens are present."
+    },
+    {
+      "id": "A",
+      "claim_id": "communication.action-completed.v1",
+      "meaning": "The specified synthetic requested action was completed by the review cutoff.",
+      "evidence_field": "action_completion_tick",
+      "evidence_source": "Stipulated completion of the fictional action step-alpha; no real action or clinical intervention is represented.",
+      "rule": "The qualifying event tick is present and no later than review_cutoff."
+    },
+    {
+      "id": "H",
+      "claim_id": "communication.handoff-accepted.v1",
+      "meaning": "The designated receiving role accepted the specified synthetic handoff by the review cutoff.",
+      "evidence_field": "handoff_acceptance_tick",
+      "evidence_source": "Stipulated explicit acceptance by the fictional receiving role; a request, send, delivery, or acknowledgment is not this event.",
+      "rule": "The qualifying acceptance tick is present and no later than review_cutoff; this is an authored world fact, not an appointment or grant of actual authority."
+    },
+    {
+      "id": "Tr",
+      "claim_id": "communication.response-by-target.v1",
+      "meaning": "The specified synthetic response occurred by the response target.",
+      "evidence_field": "response_tick",
+      "evidence_source": "Stipulated response to request-alpha in the synthetic event ledger.",
+      "rule": "The qualifying response tick is present and no later than response_target; equality with the target qualifies."
+    },
+    {
+      "id": "Ts",
+      "claim_id": "communication.resolution-by-target.v1",
+      "meaning": "The specified synthetic resolution occurred by the resolution target.",
+      "evidence_field": "resolution_tick",
+      "evidence_source": "Stipulated resolution event for the fictional communication episode; action completion and handoff acceptance are different events.",
+      "rule": "The qualifying resolution tick is present and no later than resolution_target; equality with the target qualifies."
+    }
+  ],
+  "timing": {
+    "unit": "synthetic_tick",
+    "start": 0,
+    "response_target": 10,
+    "resolution_target": 20,
+    "review_cutoff": 30,
+    "target_comparison": "inclusive",
+    "meaning": "Invented fixture parameters; no real response or resolution deadline is asserted."
+  },
+  "evidence_convention": {
+    "ledger_scope": "Complete by stipulation for only the six qualifying synthetic event kinds through the review cutoff.",
+    "null_meaning": "A null event tick stipulates no qualifying event of that kind through the review cutoff within that world. It does not mean that an observer failed to receive a record.",
+    "positive_tick_meaning": "The authored tick stipulates the qualifying event in that world; it is not an observed operational record.",
+    "observation_separation": "The view may hide events in the stipulated world ledger. Missing observation is represented by multiple compatible worlds.",
+    "understanding_boundary": "The specified restatement is evidence under this fixture definition; it does not establish mental state, consent, refusal, or capacity.",
+    "no_implicit_implications": "No universal implication among receipt, understanding evidence, action, acceptance, response, and resolution is claimed. Any correlation in these eight finite scenarios remains local to the authored worlds.",
+    "no_global_completeness": "Fictional ledger completeness does not establish complete instrumentation, global observability, or real-world model coverage."
+  },
+  "projection_contract": {
+    "model_schema": "grwtsk.finite-observation-model/1",
+    "query_schema": "grwtsk.finite-observation-query/1",
+    "role_of_view": "A view is an observation function, not an authenticated role, permission, or disclosure filter.",
+    "rule": "For each case, view, and predicate, keep every world in declared order. Map its id to trace_id, its explicit admissibility to admissible, view.observation_by_world[id] to view, and valuation[predicate.id] to claim. Query view.query_observation with the predicate's exact claim_id and the exact projected model digest.",
+    "cross_predicate_coherence": "Within one case/view, all six projected models must preserve the same ordered world IDs, admissibility, observation values, and queried observation. Only claim_id and the selected Boolean claim column change.",
+    "expected_evaluation_count": 54
+  },
+  "obligations": [
+    {
+      "id": "meaning-and-coverage",
+      "requirement": "Review every predicate definition, evidence premise, admissibility choice, observation map, and claimed implication. The finite model and its correspondence to any real application remain separate questions."
+    },
+    {
+      "id": "disclosure",
+      "requirement": "Design and review who may submit models and queries and inspect model contents, counts, witnesses, diagnostics, explanations, and repeated-query results. The primitive returns full-model counts and compatible witness IDs; these fixtures provide no access-control enforcement."
+    },
+    {
+      "id": "continuity",
+      "requirement": "Specify proposed responsibility, acceptance, escalation, follow-up, and recovery independently. A classifier does not assign a service, obtain acceptance, cause a response, or complete resolution."
+    },
+    {
+      "id": "agency",
+      "requirement": "Preserve a way to question evidence, correct premises, and challenge proposed actions. Classification grants no authority and does not change consent, clinical findings, records, billing, or responsibility."
+    },
+    {
+      "id": "accessible-challenge",
+      "requirement": "Provide and exercise a written response and challenge route for the stated synthetic need. Event classification and interaction usability require separate judgments."
+    }
+  ],
+  "proposed_role_boundary": "Proposed response functions are design descriptions only. No actual person or service is appointed, and no professional or operational authority is granted.",
+  "cases": [
+    {
+      "id": "c01",
+      "title": "Missing acknowledgment",
+      "admissibility_basis": "Every listed world is explicitly stipulated admissible for this finite synthetic scenario. The list is an authored premise, not a validated exclusion rule or a claim of real-world completeness.",
+      "worlds": [
+        {
+          "id": "c01.w1",
+          "admissible": true,
+          "valuation": {
+            "R": false,
+            "U": false,
+            "A": false,
+            "H": false,
+            "Tr": false,
+            "Ts": false
+          },
+          "evidence": {
+            "recipient_receipt_tick": null,
+            "understanding_evidence_tick": null,
+            "action_completion_tick": null,
+            "handoff_acceptance_tick": null,
+            "response_tick": null,
+            "resolution_tick": null
+          }
+        },
+        {
+          "id": "c01.w2",
+          "admissible": true,
+          "valuation": {
+            "R": true,
+            "U": false,
+            "A": false,
+            "H": false,
+            "Tr": false,
+            "Ts": false
+          },
+          "evidence": {
+            "recipient_receipt_tick": 3,
+            "understanding_evidence_tick": null,
+            "action_completion_tick": null,
+            "handoff_acceptance_tick": null,
+            "response_tick": null,
+            "resolution_tick": null
+          }
+        },
+        {
+          "id": "c01.w3",
+          "admissible": true,
+          "valuation": {
+            "R": true,
+            "U": true,
+            "A": true,
+            "H": true,
+            "Tr": true,
+            "Ts": true
+          },
+          "evidence": {
+            "recipient_receipt_tick": 3,
+            "understanding_evidence_tick": 5,
+            "action_completion_tick": 9,
+            "handoff_acceptance_tick": 6,
+            "response_tick": 8,
+            "resolution_tick": 18
+          }
+        }
+      ],
+      "views": [
+        {
+          "id": "review",
+          "description": "Synthetic fixture-review view; this label grants no access or decision rights.",
+          "observation_by_world": {
+            "c01.w1": "ack.unavailable",
+            "c01.w2": "ack.unavailable",
+            "c01.w3": "ack.unavailable"
+          },
+          "query_observation": "ack.unavailable",
+          "excluded_information": [
+            "Which of the three stipulated world ledgers describes the episode.",
+            "All six predicate values beyond what follows from the compatible set."
+          ]
+        }
+      ],
+      "observation_meaning": "An outgoing attempt is stipulated, while an acknowledgment is unavailable to this view. The observation does not distinguish nonreceipt, receipt alone, or completed work with a lost acknowledgment.",
+      "medical_acceptance_interpretation": "Preserve uncertainty. Do not infer refusal, incapacity, nonperformance, or completion from the unavailable acknowledgment.",
+      "proposed_response_function": "A proposed communication-reconciliation function would investigate without treating a retry as authorized.",
+      "unresolved_obligations": [
+        "meaning-and-coverage",
+        "disclosure",
+        "continuity",
+        "agency"
+      ]
+    },
+    {
+      "id": "c02",
+      "title": "Receipt recorded; later evidence incomplete",
+      "admissibility_basis": "Every listed world is explicitly stipulated admissible for this finite synthetic scenario. The list is an authored premise, not a validated exclusion rule or a claim of real-world completeness.",
+      "worlds": [
+        {
+          "id": "c02.w1",
+          "admissible": true,
+          "valuation": {
+            "R": true,
+            "U": false,
+            "A": false,
+            "H": false,
+            "Tr": false,
+            "Ts": false
+          },
+          "evidence": {
+            "recipient_receipt_tick": 3,
+            "understanding_evidence_tick": null,
+            "action_completion_tick": null,
+            "handoff_acceptance_tick": null,
+            "response_tick": null,
+            "resolution_tick": null
+          }
+        },
+        {
+          "id": "c02.w2",
+          "admissible": true,
+          "valuation": {
+            "R": true,
+            "U": true,
+            "A": false,
+            "H": false,
+            "Tr": false,
+            "Ts": false
+          },
+          "evidence": {
+            "recipient_receipt_tick": 3,
+            "understanding_evidence_tick": 5,
+            "action_completion_tick": null,
+            "handoff_acceptance_tick": null,
+            "response_tick": null,
+            "resolution_tick": null
+          }
+        },
+        {
+          "id": "c02.w3",
+          "admissible": true,
+          "valuation": {
+            "R": true,
+            "U": true,
+            "A": true,
+            "H": false,
+            "Tr": true,
+            "Ts": false
+          },
+          "evidence": {
+            "recipient_receipt_tick": 3,
+            "understanding_evidence_tick": 5,
+            "action_completion_tick": 9,
+            "handoff_acceptance_tick": null,
+            "response_tick": 8,
+            "resolution_tick": null
+          }
+        }
+      ],
+      "views": [
+        {
+          "id": "review",
+          "description": "Synthetic fixture-review view; this label grants no access or decision rights.",
+          "observation_by_world": {
+            "c02.w1": "receipt.recorded",
+            "c02.w2": "receipt.recorded",
+            "c02.w3": "receipt.recorded"
+          },
+          "query_observation": "receipt.recorded",
+          "excluded_information": [
+            "Whether the specified understanding evidence or action-completion event is present.",
+            "Whether the response target was met."
+          ]
+        }
+      ],
+      "observation_meaning": "The view receives stipulated evidence of recipient receipt, but not enough evidence to select a unique later-event ledger.",
+      "medical_acceptance_interpretation": "Receipt is supported while understanding evidence and action remain ambiguous. Fixed negatives for handoff and timely resolution arise from the authored worlds, not from silence.",
+      "proposed_response_function": "A proposed follow-up function would keep the distinct later-event questions open.",
+      "unresolved_obligations": [
+        "meaning-and-coverage",
+        "disclosure",
+        "continuity",
+        "agency"
+      ]
+    },
+    {
+      "id": "c03",
+      "title": "Understanding evidence and accepted handoff; action unresolved",
+      "admissibility_basis": "Every listed world is explicitly stipulated admissible for this finite synthetic scenario. The list is an authored premise, not a validated exclusion rule or a claim of real-world completeness.",
+      "worlds": [
+        {
+          "id": "c03.w1",
+          "admissible": true,
+          "valuation": {
+            "R": true,
+            "U": true,
+            "A": false,
+            "H": true,
+            "Tr": true,
+            "Ts": false
+          },
+          "evidence": {
+            "recipient_receipt_tick": 3,
+            "understanding_evidence_tick": 5,
+            "action_completion_tick": null,
+            "handoff_acceptance_tick": 6,
+            "response_tick": 8,
+            "resolution_tick": null
+          }
+        },
+        {
+          "id": "c03.w2",
+          "admissible": true,
+          "valuation": {
+            "R": true,
+            "U": true,
+            "A": true,
+            "H": true,
+            "Tr": true,
+            "Ts": false
+          },
+          "evidence": {
+            "recipient_receipt_tick": 3,
+            "understanding_evidence_tick": 5,
+            "action_completion_tick": 9,
+            "handoff_acceptance_tick": 6,
+            "response_tick": 8,
+            "resolution_tick": null
+          }
+        }
+      ],
+      "views": [
+        {
+          "id": "review",
+          "description": "Synthetic fixture-review view; this label grants no access or decision rights.",
+          "observation_by_world": {
+            "c03.w1": "understanding_and_handoff.recorded",
+            "c03.w2": "understanding_and_handoff.recorded"
+          },
+          "query_observation": "understanding_and_handoff.recorded",
+          "excluded_information": [
+            "Whether step-alpha was completed."
+          ]
+        }
+      ],
+      "observation_meaning": "The view has the specified understanding evidence, explicit synthetic handoff acceptance, and a timely response, while action completion is unresolved.",
+      "medical_acceptance_interpretation": "Do not promote understanding evidence, acceptance, or response into action completion. Preserve the unresolved action question.",
+      "proposed_response_function": "A proposed receiving-workflow review function would reconcile action completion while keeping its scope explicit.",
+      "unresolved_obligations": [
+        "meaning-and-coverage",
+        "disclosure",
+        "continuity",
+        "agency"
+      ]
+    },
+    {
+      "id": "c04",
+      "title": "Action without accepted handoff",
+      "admissibility_basis": "Every listed world is explicitly stipulated admissible for this finite synthetic scenario. The list is an authored premise, not a validated exclusion rule or a claim of real-world completeness.",
+      "worlds": [
+        {
+          "id": "c04.w1",
+          "admissible": true,
+          "valuation": {
+            "R": true,
+            "U": true,
+            "A": true,
+            "H": false,
+            "Tr": true,
+            "Ts": false
+          },
+          "evidence": {
+            "recipient_receipt_tick": 3,
+            "understanding_evidence_tick": 5,
+            "action_completion_tick": 9,
+            "handoff_acceptance_tick": null,
+            "response_tick": 8,
+            "resolution_tick": null
+          }
+        }
+      ],
+      "views": [
+        {
+          "id": "review",
+          "description": "Synthetic fixture-review view; this label grants no access or decision rights.",
+          "observation_by_world": {
+            "c04.w1": "action.recorded_handoff.unaccepted"
+          },
+          "query_observation": "action.recorded_handoff.unaccepted",
+          "excluded_information": []
+        }
+      ],
+      "observation_meaning": "The authored evidence selects a world with receipt, understanding evidence, action completion, and timely response, but without accepted handoff or timely resolution.",
+      "medical_acceptance_interpretation": "An action or sent notification does not complete transfer of responsibility or resolution. Keep handoff_unaccepted visible in the proposed workflow.",
+      "proposed_response_function": "A proposed coordination function would seek explicit acceptance or a separately specified exception path; classification does not assign an actual owner.",
+      "unresolved_obligations": [
+        "meaning-and-coverage",
+        "disclosure",
+        "continuity",
+        "agency"
+      ]
+    },
+    {
+      "id": "c05",
+      "title": "Accepted handoff; timely resolution unconfirmed",
+      "admissibility_basis": "Every listed world is explicitly stipulated admissible for this finite synthetic scenario. The list is an authored premise, not a validated exclusion rule or a claim of real-world completeness.",
+      "worlds": [
+        {
+          "id": "c05.w1",
+          "admissible": true,
+          "valuation": {
+            "R": true,
+            "U": true,
+            "A": true,
+            "H": true,
+            "Tr": true,
+            "Ts": false
+          },
+          "evidence": {
+            "recipient_receipt_tick": 3,
+            "understanding_evidence_tick": 5,
+            "action_completion_tick": 9,
+            "handoff_acceptance_tick": 6,
+            "response_tick": 8,
+            "resolution_tick": null
+          }
+        },
+        {
+          "id": "c05.w2",
+          "admissible": true,
+          "valuation": {
+            "R": true,
+            "U": true,
+            "A": true,
+            "H": true,
+            "Tr": true,
+            "Ts": true
+          },
+          "evidence": {
+            "recipient_receipt_tick": 3,
+            "understanding_evidence_tick": 5,
+            "action_completion_tick": 9,
+            "handoff_acceptance_tick": 6,
+            "response_tick": 8,
+            "resolution_tick": 18
+          }
+        }
+      ],
+      "views": [
+        {
+          "id": "review",
+          "description": "Synthetic fixture-review view; this label grants no access or decision rights.",
+          "observation_by_world": {
+            "c05.w1": "handoff.accepted_resolution.unconfirmed",
+            "c05.w2": "handoff.accepted_resolution.unconfirmed"
+          },
+          "query_observation": "handoff.accepted_resolution.unconfirmed",
+          "excluded_information": [
+            "Whether the synthetic resolution occurred by its target."
+          ]
+        }
+      ],
+      "observation_meaning": "Receipt, understanding evidence, action, handoff acceptance, and timely response are observed. Resolution evidence is incomplete at the review cutoff, allowing both no timely resolution and an unobserved timely resolution.",
+      "medical_acceptance_interpretation": "Distinguish an unconfirmed timely resolution from a proven missed target. An accepted handoff does not discharge all follow-up requirements.",
+      "proposed_response_function": "A proposed resolution-follow-up function would reconcile the missing evidence and retain the timing question.",
+      "unresolved_obligations": [
+        "meaning-and-coverage",
+        "disclosure",
+        "continuity",
+        "agency"
+      ]
+    },
+    {
+      "id": "c06",
+      "title": "Different role views",
+      "admissibility_basis": "Every listed world is explicitly stipulated admissible for this finite synthetic scenario. The list is an authored premise, not a validated exclusion rule or a claim of real-world completeness.",
+      "worlds": [
+        {
+          "id": "c06.w1",
+          "admissible": true,
+          "valuation": {
+            "R": true,
+            "U": false,
+            "A": false,
+            "H": false,
+            "Tr": false,
+            "Ts": false
+          },
+          "evidence": {
+            "recipient_receipt_tick": 3,
+            "understanding_evidence_tick": null,
+            "action_completion_tick": null,
+            "handoff_acceptance_tick": null,
+            "response_tick": null,
+            "resolution_tick": null
+          }
+        },
+        {
+          "id": "c06.w2",
+          "admissible": true,
+          "valuation": {
+            "R": true,
+            "U": true,
+            "A": true,
+            "H": true,
+            "Tr": true,
+            "Ts": true
+          },
+          "evidence": {
+            "recipient_receipt_tick": 3,
+            "understanding_evidence_tick": 5,
+            "action_completion_tick": 9,
+            "handoff_acceptance_tick": 6,
+            "response_tick": 8,
+            "resolution_tick": 18
+          }
+        }
+      ],
+      "views": [
+        {
+          "id": "detailed",
+          "description": "Synthetic detailed review view; no actual access entitlement is asserted.",
+          "observation_by_world": {
+            "c06.w1": "detail.receipt_only",
+            "c06.w2": "detail.completed"
+          },
+          "query_observation": "detail.completed",
+          "excluded_information": []
+        },
+        {
+          "id": "limited",
+          "description": "Synthetic limited review view; no actual access entitlement is asserted.",
+          "observation_by_world": {
+            "c06.w1": "limited.receipt_recorded",
+            "c06.w2": "limited.receipt_recorded"
+          },
+          "query_observation": "limited.receipt_recorded",
+          "excluded_information": [
+            "Which detailed observation occurred.",
+            "Which of the two complete world ledgers applies.",
+            "Understanding evidence, action, handoff, and timing facts not supported by this limited observation."
+          ]
+        }
+      ],
+      "observation_meaning": "Two views share exactly the same admissible worlds and valuations. The detailed observation distinguishes receipt alone from completion. The limited observation merges those possibilities.",
+      "medical_acceptance_interpretation": "Bind each result to the exact supplied view. Do not transfer detailed-view certainty to the limited view or expose excluded details through witnesses, counts, errors, explanations, or repeated queries.",
+      "proposed_response_function": "A proposed disclosure-review function would determine an authorized integration and output policy separately from this observation model.",
+      "unresolved_obligations": [
+        "meaning-and-coverage",
+        "disclosure",
+        "continuity",
+        "agency"
+      ],
+      "coarsening": {
+        "from_view_id": "detailed",
+        "to_view_id": "limited",
+        "observation_map": {
+          "detail.receipt_only": "limited.receipt_recorded",
+          "detail.completed": "limited.receipt_recorded"
+        },
+        "required_relation": "For every shared world w, observation_map[detailed.observation_by_world[w.id]] equals limited.observation_by_world[w.id]. Neither admissibility nor valuation changes between views."
+      }
+    },
+    {
+      "id": "c07",
+      "title": "Observation outside the model",
+      "admissibility_basis": "Every listed world is explicitly stipulated admissible for this finite synthetic scenario. The list is an authored premise, not a validated exclusion rule or a claim of real-world completeness.",
+      "worlds": [
+        {
+          "id": "c07.w1",
+          "admissible": true,
+          "valuation": {
+            "R": false,
+            "U": false,
+            "A": false,
+            "H": false,
+            "Tr": false,
+            "Ts": false
+          },
+          "evidence": {
+            "recipient_receipt_tick": null,
+            "understanding_evidence_tick": null,
+            "action_completion_tick": null,
+            "handoff_acceptance_tick": null,
+            "response_tick": null,
+            "resolution_tick": null
+          }
+        },
+        {
+          "id": "c07.w2",
+          "admissible": true,
+          "valuation": {
+            "R": true,
+            "U": true,
+            "A": true,
+            "H": true,
+            "Tr": true,
+            "Ts": true
+          },
+          "evidence": {
+            "recipient_receipt_tick": 3,
+            "understanding_evidence_tick": 5,
+            "action_completion_tick": 9,
+            "handoff_acceptance_tick": 6,
+            "response_tick": 8,
+            "resolution_tick": 18
+          }
+        }
+      ],
+      "views": [
+        {
+          "id": "review",
+          "description": "Synthetic fixture-review view; this label grants no access or decision rights.",
+          "observation_by_world": {
+            "c07.w1": "known.observation",
+            "c07.w2": "known.observation"
+          },
+          "query_observation": "unmatched.observation",
+          "excluded_information": [
+            "Any assertion about which modeled valuation, if either, corresponds to an external episode."
+          ]
+        }
+      ],
+      "observation_meaning": "Both admissible worlds map to known.observation, while the query requests unmatched.observation. The universe is nonempty but the compatible set is empty.",
+      "medical_acceptance_interpretation": "Investigate model, observation, or interpretation mismatch. Do not infer nonreceipt, nonperformance, deception, refusal, or incapacity.",
+      "proposed_response_function": "A proposed model-and-input reconciliation function would inspect the mismatch; it has no authority to alter real records or decisions.",
+      "unresolved_obligations": [
+        "meaning-and-coverage",
+        "disclosure",
+        "continuity",
+        "agency"
+      ]
+    },
+    {
+      "id": "c08",
+      "title": "Positive event evidence with an inaccessible challenge route",
+      "admissibility_basis": "Every listed world is explicitly stipulated admissible for this finite synthetic scenario. The list is an authored premise, not a validated exclusion rule or a claim of real-world completeness.",
+      "worlds": [
+        {
+          "id": "c08.w1",
+          "admissible": true,
+          "valuation": {
+            "R": true,
+            "U": true,
+            "A": true,
+            "H": true,
+            "Tr": true,
+            "Ts": true
+          },
+          "evidence": {
+            "recipient_receipt_tick": 3,
+            "understanding_evidence_tick": 5,
+            "action_completion_tick": 9,
+            "handoff_acceptance_tick": 6,
+            "response_tick": 8,
+            "resolution_tick": 18
+          }
+        }
+      ],
+      "views": [
+        {
+          "id": "review",
+          "description": "Synthetic fixture-review view; this label grants no access or decision rights.",
+          "observation_by_world": {
+            "c08.w1": "completion.recorded"
+          },
+          "query_observation": "completion.recorded",
+          "excluded_information": []
+        }
+      ],
+      "observation_meaning": "The event observation selects a fully positive synthetic ledger. The ability to challenge the premises is a separate interaction property.",
+      "medical_acceptance_interpretation": "All six model claims are supported, while the stipulated speech-only challenge route is unusable for the synthetic written-interaction need. Do not collapse these judgments into one pass flag.",
+      "proposed_response_function": "A proposed accessibility-and-participation function would provide and exercise a written challenge route without treating model support as a waiver of participation.",
+      "unresolved_obligations": [
+        "meaning-and-coverage",
+        "disclosure",
+        "continuity",
+        "agency",
+        "accessible-challenge"
+      ],
+      "interaction_fixture": {
+        "participant_need": "written exchange",
+        "speech_route_usable": false,
+        "offered_challenge_route": "speech_only",
+        "authored_expected_interaction_outcome": "challenge_route_unusable",
+        "required_follow_up": "Specify and exercise a written response and challenge route separately. This is a requirement and expected counterexample, not an execution report."
+      }
+    }
+  ]
+}
+

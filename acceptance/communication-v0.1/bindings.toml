@@ -1,0 +1,46 @@
+schema = "grwtsk.medicine.communication-bindings/1"
+suite_id = "communication-v0.1"
+artifact_kind = "authored-source-binding"
+profile_id = "noe.finite-observation-support/1"
+expected_case_count = 54
+expected_input_count = 108
+repository_revision = "Supplied externally; this record does not embed its own containing commit."
+origin_and_authority = "These hashes identify this authored package; they do not authenticate its origin or authorize use."
+execution_outcomes = "Not contained in this source package."
+conceptual_direction = "R.A. Jacob Martone"
+development = "With AI assistance"
+
+[[inputs]]
+path = "specification.md"
+mode = "100644"
+sha256 = "6e74029c0822dba2c969af873bec559a49b2957c6c9ee15315afd960441aadae"
+git_blob = "f4d7a03899fb9811e514c81a5e7392badb205625"
+byte_count = 16531
+
+[[inputs]]
+path = "scenarios.json"
+mode = "100644"
+sha256 = "4dd6a449ed28ebe46c7ecc47cf81c2addbfc054a9028f436c037cdd3c02b694b"
+git_blob = "1eb669fbceae1180ec8d5cfee27b829152729d96"
+byte_count = 29741
+
+[[inputs]]
+path = "expectations.json"
+mode = "100644"
+sha256 = "d3a692ec3abc2d9b7edd4eb3850e363ba2dd63157bcd17e013afb2d1bb1bff9c"
+git_blob = "f92f99850c81f1b68ed64b4df51fee5d04e0776f"
+byte_count = 33693
+
+[[inputs]]
+path = "vectors.json"
+mode = "100644"
+sha256 = "ff14532098b23956017b8714e9f76693a2498d8f98b0f57e42974a61065f18f1"
+git_blob = "de9663622240e7e18d7bbd97ab07cd70635117b0"
+byte_count = 53478
+
+[[inputs]]
+path = "corpus.json"
+mode = "100644"
+sha256 = "cab30e87794c37d973fcd159a7908055b8eb796d1b8fb526ab21c9170ed05093"
+git_blob = "5bd967cfad51053a801d387d04e4a01478ec6afc"
+byte_count = 40078

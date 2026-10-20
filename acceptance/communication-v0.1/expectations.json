@@ -1,0 +1,1501 @@
+{
+  "schema": "grwtsk.medicine.communication-expectations/1",
+  "suite_id": "communication-v0.1",
+  "artifact_kind": "authored-expectation-ledger",
+  "scope": "supplied-finite-model",
+  "predicate_order": [
+    "R",
+    "U",
+    "A",
+    "H",
+    "Tr",
+    "Ts"
+  ],
+  "record_count": 54,
+  "authorship_method": "Statuses and witness partitions were stipulated separately from the classifier implementation using the authored eight-scenario matrix. No classifier output was used as an oracle. This authored ledger is not an execution record or a completed independent review.",
+  "ordering": "Cases c01 through c08; case c06 detailed before limited; predicates in predicate_order. Compatible and witness IDs preserve declared world order.",
+  "boundary": "Expected classifier agreement does not establish accessibility, disclosure enforcement, continuity, professional review, real-world correspondence, formal acceptance, or authority.",
+  "records": [
+    {
+      "id": "c01.review.R",
+      "case_id": "c01",
+      "view_id": "review",
+      "predicate_id": "R",
+      "claim_id": "communication.receipt.v1",
+      "expected": {
+        "status": "ambiguous",
+        "compatible_ids": [
+          "c01.w1",
+          "c01.w2",
+          "c01.w3"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c01.w2",
+            "c01.w3"
+          ],
+          "claim_false": [
+            "c01.w1"
+          ]
+        },
+        "counts": {
+          "total": 3,
+          "admissible": 3,
+          "compatible": 3,
+          "claim_true": 2,
+          "claim_false": 1
+        }
+      }
+    },
+    {
+      "id": "c01.review.U",
+      "case_id": "c01",
+      "view_id": "review",
+      "predicate_id": "U",
+      "claim_id": "communication.understanding-evidence.v1",
+      "expected": {
+        "status": "ambiguous",
+        "compatible_ids": [
+          "c01.w1",
+          "c01.w2",
+          "c01.w3"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c01.w3"
+          ],
+          "claim_false": [
+            "c01.w1",
+            "c01.w2"
+          ]
+        },
+        "counts": {
+          "total": 3,
+          "admissible": 3,
+          "compatible": 3,
+          "claim_true": 1,
+          "claim_false": 2
+        }
+      }
+    },
+    {
+      "id": "c01.review.A",
+      "case_id": "c01",
+      "view_id": "review",
+      "predicate_id": "A",
+      "claim_id": "communication.action-completed.v1",
+      "expected": {
+        "status": "ambiguous",
+        "compatible_ids": [
+          "c01.w1",
+          "c01.w2",
+          "c01.w3"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c01.w3"
+          ],
+          "claim_false": [
+            "c01.w1",
+            "c01.w2"
+          ]
+        },
+        "counts": {
+          "total": 3,
+          "admissible": 3,
+          "compatible": 3,
+          "claim_true": 1,
+          "claim_false": 2
+        }
+      }
+    },
+    {
+      "id": "c01.review.H",
+      "case_id": "c01",
+      "view_id": "review",
+      "predicate_id": "H",
+      "claim_id": "communication.handoff-accepted.v1",
+      "expected": {
+        "status": "ambiguous",
+        "compatible_ids": [
+          "c01.w1",
+          "c01.w2",
+          "c01.w3"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c01.w3"
+          ],
+          "claim_false": [
+            "c01.w1",
+            "c01.w2"
+          ]
+        },
+        "counts": {
+          "total": 3,
+          "admissible": 3,
+          "compatible": 3,
+          "claim_true": 1,
+          "claim_false": 2
+        }
+      }
+    },
+    {
+      "id": "c01.review.Tr",
+      "case_id": "c01",
+      "view_id": "review",
+      "predicate_id": "Tr",
+      "claim_id": "communication.response-by-target.v1",
+      "expected": {
+        "status": "ambiguous",
+        "compatible_ids": [
+          "c01.w1",
+          "c01.w2",
+          "c01.w3"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c01.w3"
+          ],
+          "claim_false": [
+            "c01.w1",
+            "c01.w2"
+          ]
+        },
+        "counts": {
+          "total": 3,
+          "admissible": 3,
+          "compatible": 3,
+          "claim_true": 1,
+          "claim_false": 2
+        }
+      }
+    },
+    {
+      "id": "c01.review.Ts",
+      "case_id": "c01",
+      "view_id": "review",
+      "predicate_id": "Ts",
+      "claim_id": "communication.resolution-by-target.v1",
+      "expected": {
+        "status": "ambiguous",
+        "compatible_ids": [
+          "c01.w1",
+          "c01.w2",
+          "c01.w3"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c01.w3"
+          ],
+          "claim_false": [
+            "c01.w1",
+            "c01.w2"
+          ]
+        },
+        "counts": {
+          "total": 3,
+          "admissible": 3,
+          "compatible": 3,
+          "claim_true": 1,
+          "claim_false": 2
+        }
+      }
+    },
+    {
+      "id": "c02.review.R",
+      "case_id": "c02",
+      "view_id": "review",
+      "predicate_id": "R",
+      "claim_id": "communication.receipt.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c02.w1",
+          "c02.w2",
+          "c02.w3"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c02.w1",
+            "c02.w2",
+            "c02.w3"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 3,
+          "admissible": 3,
+          "compatible": 3,
+          "claim_true": 3,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c02.review.U",
+      "case_id": "c02",
+      "view_id": "review",
+      "predicate_id": "U",
+      "claim_id": "communication.understanding-evidence.v1",
+      "expected": {
+        "status": "ambiguous",
+        "compatible_ids": [
+          "c02.w1",
+          "c02.w2",
+          "c02.w3"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c02.w2",
+            "c02.w3"
+          ],
+          "claim_false": [
+            "c02.w1"
+          ]
+        },
+        "counts": {
+          "total": 3,
+          "admissible": 3,
+          "compatible": 3,
+          "claim_true": 2,
+          "claim_false": 1
+        }
+      }
+    },
+    {
+      "id": "c02.review.A",
+      "case_id": "c02",
+      "view_id": "review",
+      "predicate_id": "A",
+      "claim_id": "communication.action-completed.v1",
+      "expected": {
+        "status": "ambiguous",
+        "compatible_ids": [
+          "c02.w1",
+          "c02.w2",
+          "c02.w3"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c02.w3"
+          ],
+          "claim_false": [
+            "c02.w1",
+            "c02.w2"
+          ]
+        },
+        "counts": {
+          "total": 3,
+          "admissible": 3,
+          "compatible": 3,
+          "claim_true": 1,
+          "claim_false": 2
+        }
+      }
+    },
+    {
+      "id": "c02.review.H",
+      "case_id": "c02",
+      "view_id": "review",
+      "predicate_id": "H",
+      "claim_id": "communication.handoff-accepted.v1",
+      "expected": {
+        "status": "refuted",
+        "compatible_ids": [
+          "c02.w1",
+          "c02.w2",
+          "c02.w3"
+        ],
+        "witness_ids": {
+          "claim_true": [],
+          "claim_false": [
+            "c02.w1",
+            "c02.w2",
+            "c02.w3"
+          ]
+        },
+        "counts": {
+          "total": 3,
+          "admissible": 3,
+          "compatible": 3,
+          "claim_true": 0,
+          "claim_false": 3
+        }
+      }
+    },
+    {
+      "id": "c02.review.Tr",
+      "case_id": "c02",
+      "view_id": "review",
+      "predicate_id": "Tr",
+      "claim_id": "communication.response-by-target.v1",
+      "expected": {
+        "status": "ambiguous",
+        "compatible_ids": [
+          "c02.w1",
+          "c02.w2",
+          "c02.w3"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c02.w3"
+          ],
+          "claim_false": [
+            "c02.w1",
+            "c02.w2"
+          ]
+        },
+        "counts": {
+          "total": 3,
+          "admissible": 3,
+          "compatible": 3,
+          "claim_true": 1,
+          "claim_false": 2
+        }
+      }
+    },
+    {
+      "id": "c02.review.Ts",
+      "case_id": "c02",
+      "view_id": "review",
+      "predicate_id": "Ts",
+      "claim_id": "communication.resolution-by-target.v1",
+      "expected": {
+        "status": "refuted",
+        "compatible_ids": [
+          "c02.w1",
+          "c02.w2",
+          "c02.w3"
+        ],
+        "witness_ids": {
+          "claim_true": [],
+          "claim_false": [
+            "c02.w1",
+            "c02.w2",
+            "c02.w3"
+          ]
+        },
+        "counts": {
+          "total": 3,
+          "admissible": 3,
+          "compatible": 3,
+          "claim_true": 0,
+          "claim_false": 3
+        }
+      }
+    },
+    {
+      "id": "c03.review.R",
+      "case_id": "c03",
+      "view_id": "review",
+      "predicate_id": "R",
+      "claim_id": "communication.receipt.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c03.w1",
+          "c03.w2"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c03.w1",
+            "c03.w2"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 2,
+          "claim_true": 2,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c03.review.U",
+      "case_id": "c03",
+      "view_id": "review",
+      "predicate_id": "U",
+      "claim_id": "communication.understanding-evidence.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c03.w1",
+          "c03.w2"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c03.w1",
+            "c03.w2"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 2,
+          "claim_true": 2,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c03.review.A",
+      "case_id": "c03",
+      "view_id": "review",
+      "predicate_id": "A",
+      "claim_id": "communication.action-completed.v1",
+      "expected": {
+        "status": "ambiguous",
+        "compatible_ids": [
+          "c03.w1",
+          "c03.w2"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c03.w2"
+          ],
+          "claim_false": [
+            "c03.w1"
+          ]
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 2,
+          "claim_true": 1,
+          "claim_false": 1
+        }
+      }
+    },
+    {
+      "id": "c03.review.H",
+      "case_id": "c03",
+      "view_id": "review",
+      "predicate_id": "H",
+      "claim_id": "communication.handoff-accepted.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c03.w1",
+          "c03.w2"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c03.w1",
+            "c03.w2"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 2,
+          "claim_true": 2,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c03.review.Tr",
+      "case_id": "c03",
+      "view_id": "review",
+      "predicate_id": "Tr",
+      "claim_id": "communication.response-by-target.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c03.w1",
+          "c03.w2"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c03.w1",
+            "c03.w2"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 2,
+          "claim_true": 2,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c03.review.Ts",
+      "case_id": "c03",
+      "view_id": "review",
+      "predicate_id": "Ts",
+      "claim_id": "communication.resolution-by-target.v1",
+      "expected": {
+        "status": "refuted",
+        "compatible_ids": [
+          "c03.w1",
+          "c03.w2"
+        ],
+        "witness_ids": {
+          "claim_true": [],
+          "claim_false": [
+            "c03.w1",
+            "c03.w2"
+          ]
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 2,
+          "claim_true": 0,
+          "claim_false": 2
+        }
+      }
+    },
+    {
+      "id": "c04.review.R",
+      "case_id": "c04",
+      "view_id": "review",
+      "predicate_id": "R",
+      "claim_id": "communication.receipt.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c04.w1"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c04.w1"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 1,
+          "admissible": 1,
+          "compatible": 1,
+          "claim_true": 1,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c04.review.U",
+      "case_id": "c04",
+      "view_id": "review",
+      "predicate_id": "U",
+      "claim_id": "communication.understanding-evidence.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c04.w1"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c04.w1"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 1,
+          "admissible": 1,
+          "compatible": 1,
+          "claim_true": 1,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c04.review.A",
+      "case_id": "c04",
+      "view_id": "review",
+      "predicate_id": "A",
+      "claim_id": "communication.action-completed.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c04.w1"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c04.w1"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 1,
+          "admissible": 1,
+          "compatible": 1,
+          "claim_true": 1,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c04.review.H",
+      "case_id": "c04",
+      "view_id": "review",
+      "predicate_id": "H",
+      "claim_id": "communication.handoff-accepted.v1",
+      "expected": {
+        "status": "refuted",
+        "compatible_ids": [
+          "c04.w1"
+        ],
+        "witness_ids": {
+          "claim_true": [],
+          "claim_false": [
+            "c04.w1"
+          ]
+        },
+        "counts": {
+          "total": 1,
+          "admissible": 1,
+          "compatible": 1,
+          "claim_true": 0,
+          "claim_false": 1
+        }
+      }
+    },
+    {
+      "id": "c04.review.Tr",
+      "case_id": "c04",
+      "view_id": "review",
+      "predicate_id": "Tr",
+      "claim_id": "communication.response-by-target.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c04.w1"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c04.w1"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 1,
+          "admissible": 1,
+          "compatible": 1,
+          "claim_true": 1,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c04.review.Ts",
+      "case_id": "c04",
+      "view_id": "review",
+      "predicate_id": "Ts",
+      "claim_id": "communication.resolution-by-target.v1",
+      "expected": {
+        "status": "refuted",
+        "compatible_ids": [
+          "c04.w1"
+        ],
+        "witness_ids": {
+          "claim_true": [],
+          "claim_false": [
+            "c04.w1"
+          ]
+        },
+        "counts": {
+          "total": 1,
+          "admissible": 1,
+          "compatible": 1,
+          "claim_true": 0,
+          "claim_false": 1
+        }
+      }
+    },
+    {
+      "id": "c05.review.R",
+      "case_id": "c05",
+      "view_id": "review",
+      "predicate_id": "R",
+      "claim_id": "communication.receipt.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c05.w1",
+          "c05.w2"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c05.w1",
+            "c05.w2"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 2,
+          "claim_true": 2,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c05.review.U",
+      "case_id": "c05",
+      "view_id": "review",
+      "predicate_id": "U",
+      "claim_id": "communication.understanding-evidence.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c05.w1",
+          "c05.w2"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c05.w1",
+            "c05.w2"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 2,
+          "claim_true": 2,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c05.review.A",
+      "case_id": "c05",
+      "view_id": "review",
+      "predicate_id": "A",
+      "claim_id": "communication.action-completed.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c05.w1",
+          "c05.w2"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c05.w1",
+            "c05.w2"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 2,
+          "claim_true": 2,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c05.review.H",
+      "case_id": "c05",
+      "view_id": "review",
+      "predicate_id": "H",
+      "claim_id": "communication.handoff-accepted.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c05.w1",
+          "c05.w2"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c05.w1",
+            "c05.w2"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 2,
+          "claim_true": 2,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c05.review.Tr",
+      "case_id": "c05",
+      "view_id": "review",
+      "predicate_id": "Tr",
+      "claim_id": "communication.response-by-target.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c05.w1",
+          "c05.w2"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c05.w1",
+            "c05.w2"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 2,
+          "claim_true": 2,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c05.review.Ts",
+      "case_id": "c05",
+      "view_id": "review",
+      "predicate_id": "Ts",
+      "claim_id": "communication.resolution-by-target.v1",
+      "expected": {
+        "status": "ambiguous",
+        "compatible_ids": [
+          "c05.w1",
+          "c05.w2"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c05.w2"
+          ],
+          "claim_false": [
+            "c05.w1"
+          ]
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 2,
+          "claim_true": 1,
+          "claim_false": 1
+        }
+      }
+    },
+    {
+      "id": "c06.detailed.R",
+      "case_id": "c06",
+      "view_id": "detailed",
+      "predicate_id": "R",
+      "claim_id": "communication.receipt.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c06.w2"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c06.w2"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 1,
+          "claim_true": 1,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c06.detailed.U",
+      "case_id": "c06",
+      "view_id": "detailed",
+      "predicate_id": "U",
+      "claim_id": "communication.understanding-evidence.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c06.w2"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c06.w2"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 1,
+          "claim_true": 1,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c06.detailed.A",
+      "case_id": "c06",
+      "view_id": "detailed",
+      "predicate_id": "A",
+      "claim_id": "communication.action-completed.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c06.w2"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c06.w2"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 1,
+          "claim_true": 1,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c06.detailed.H",
+      "case_id": "c06",
+      "view_id": "detailed",
+      "predicate_id": "H",
+      "claim_id": "communication.handoff-accepted.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c06.w2"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c06.w2"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 1,
+          "claim_true": 1,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c06.detailed.Tr",
+      "case_id": "c06",
+      "view_id": "detailed",
+      "predicate_id": "Tr",
+      "claim_id": "communication.response-by-target.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c06.w2"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c06.w2"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 1,
+          "claim_true": 1,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c06.detailed.Ts",
+      "case_id": "c06",
+      "view_id": "detailed",
+      "predicate_id": "Ts",
+      "claim_id": "communication.resolution-by-target.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c06.w2"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c06.w2"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 1,
+          "claim_true": 1,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c06.limited.R",
+      "case_id": "c06",
+      "view_id": "limited",
+      "predicate_id": "R",
+      "claim_id": "communication.receipt.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c06.w1",
+          "c06.w2"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c06.w1",
+            "c06.w2"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 2,
+          "claim_true": 2,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c06.limited.U",
+      "case_id": "c06",
+      "view_id": "limited",
+      "predicate_id": "U",
+      "claim_id": "communication.understanding-evidence.v1",
+      "expected": {
+        "status": "ambiguous",
+        "compatible_ids": [
+          "c06.w1",
+          "c06.w2"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c06.w2"
+          ],
+          "claim_false": [
+            "c06.w1"
+          ]
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 2,
+          "claim_true": 1,
+          "claim_false": 1
+        }
+      }
+    },
+    {
+      "id": "c06.limited.A",
+      "case_id": "c06",
+      "view_id": "limited",
+      "predicate_id": "A",
+      "claim_id": "communication.action-completed.v1",
+      "expected": {
+        "status": "ambiguous",
+        "compatible_ids": [
+          "c06.w1",
+          "c06.w2"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c06.w2"
+          ],
+          "claim_false": [
+            "c06.w1"
+          ]
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 2,
+          "claim_true": 1,
+          "claim_false": 1
+        }
+      }
+    },
+    {
+      "id": "c06.limited.H",
+      "case_id": "c06",
+      "view_id": "limited",
+      "predicate_id": "H",
+      "claim_id": "communication.handoff-accepted.v1",
+      "expected": {
+        "status": "ambiguous",
+        "compatible_ids": [
+          "c06.w1",
+          "c06.w2"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c06.w2"
+          ],
+          "claim_false": [
+            "c06.w1"
+          ]
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 2,
+          "claim_true": 1,
+          "claim_false": 1
+        }
+      }
+    },
+    {
+      "id": "c06.limited.Tr",
+      "case_id": "c06",
+      "view_id": "limited",
+      "predicate_id": "Tr",
+      "claim_id": "communication.response-by-target.v1",
+      "expected": {
+        "status": "ambiguous",
+        "compatible_ids": [
+          "c06.w1",
+          "c06.w2"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c06.w2"
+          ],
+          "claim_false": [
+            "c06.w1"
+          ]
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 2,
+          "claim_true": 1,
+          "claim_false": 1
+        }
+      }
+    },
+    {
+      "id": "c06.limited.Ts",
+      "case_id": "c06",
+      "view_id": "limited",
+      "predicate_id": "Ts",
+      "claim_id": "communication.resolution-by-target.v1",
+      "expected": {
+        "status": "ambiguous",
+        "compatible_ids": [
+          "c06.w1",
+          "c06.w2"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c06.w2"
+          ],
+          "claim_false": [
+            "c06.w1"
+          ]
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 2,
+          "claim_true": 1,
+          "claim_false": 1
+        }
+      }
+    },
+    {
+      "id": "c07.review.R",
+      "case_id": "c07",
+      "view_id": "review",
+      "predicate_id": "R",
+      "claim_id": "communication.receipt.v1",
+      "expected": {
+        "status": "model_mismatch",
+        "compatible_ids": [],
+        "witness_ids": {
+          "claim_true": [],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 0,
+          "claim_true": 0,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c07.review.U",
+      "case_id": "c07",
+      "view_id": "review",
+      "predicate_id": "U",
+      "claim_id": "communication.understanding-evidence.v1",
+      "expected": {
+        "status": "model_mismatch",
+        "compatible_ids": [],
+        "witness_ids": {
+          "claim_true": [],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 0,
+          "claim_true": 0,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c07.review.A",
+      "case_id": "c07",
+      "view_id": "review",
+      "predicate_id": "A",
+      "claim_id": "communication.action-completed.v1",
+      "expected": {
+        "status": "model_mismatch",
+        "compatible_ids": [],
+        "witness_ids": {
+          "claim_true": [],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 0,
+          "claim_true": 0,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c07.review.H",
+      "case_id": "c07",
+      "view_id": "review",
+      "predicate_id": "H",
+      "claim_id": "communication.handoff-accepted.v1",
+      "expected": {
+        "status": "model_mismatch",
+        "compatible_ids": [],
+        "witness_ids": {
+          "claim_true": [],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 0,
+          "claim_true": 0,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c07.review.Tr",
+      "case_id": "c07",
+      "view_id": "review",
+      "predicate_id": "Tr",
+      "claim_id": "communication.response-by-target.v1",
+      "expected": {
+        "status": "model_mismatch",
+        "compatible_ids": [],
+        "witness_ids": {
+          "claim_true": [],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 0,
+          "claim_true": 0,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c07.review.Ts",
+      "case_id": "c07",
+      "view_id": "review",
+      "predicate_id": "Ts",
+      "claim_id": "communication.resolution-by-target.v1",
+      "expected": {
+        "status": "model_mismatch",
+        "compatible_ids": [],
+        "witness_ids": {
+          "claim_true": [],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 2,
+          "admissible": 2,
+          "compatible": 0,
+          "claim_true": 0,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c08.review.R",
+      "case_id": "c08",
+      "view_id": "review",
+      "predicate_id": "R",
+      "claim_id": "communication.receipt.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c08.w1"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c08.w1"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 1,
+          "admissible": 1,
+          "compatible": 1,
+          "claim_true": 1,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c08.review.U",
+      "case_id": "c08",
+      "view_id": "review",
+      "predicate_id": "U",
+      "claim_id": "communication.understanding-evidence.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c08.w1"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c08.w1"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 1,
+          "admissible": 1,
+          "compatible": 1,
+          "claim_true": 1,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c08.review.A",
+      "case_id": "c08",
+      "view_id": "review",
+      "predicate_id": "A",
+      "claim_id": "communication.action-completed.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c08.w1"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c08.w1"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 1,
+          "admissible": 1,
+          "compatible": 1,
+          "claim_true": 1,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c08.review.H",
+      "case_id": "c08",
+      "view_id": "review",
+      "predicate_id": "H",
+      "claim_id": "communication.handoff-accepted.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c08.w1"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c08.w1"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 1,
+          "admissible": 1,
+          "compatible": 1,
+          "claim_true": 1,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c08.review.Tr",
+      "case_id": "c08",
+      "view_id": "review",
+      "predicate_id": "Tr",
+      "claim_id": "communication.response-by-target.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c08.w1"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c08.w1"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 1,
+          "admissible": 1,
+          "compatible": 1,
+          "claim_true": 1,
+          "claim_false": 0
+        }
+      }
+    },
+    {
+      "id": "c08.review.Ts",
+      "case_id": "c08",
+      "view_id": "review",
+      "predicate_id": "Ts",
+      "claim_id": "communication.resolution-by-target.v1",
+      "expected": {
+        "status": "supported",
+        "compatible_ids": [
+          "c08.w1"
+        ],
+        "witness_ids": {
+          "claim_true": [
+            "c08.w1"
+          ],
+          "claim_false": []
+        },
+        "counts": {
+          "total": 1,
+          "admissible": 1,
+          "compatible": 1,
+          "claim_true": 1,
+          "claim_false": 0
+        }
+      }
+    }
+  ]
+}
+

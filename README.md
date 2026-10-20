@@ -12,6 +12,7 @@ This repository tracks medical-specific requirements and acceptance work connect
 
 - [Finite observation coordination](https://github.com/grwtsk/medicine/issues/1)
 - [Accessible communication under missing acknowledgment](https://github.com/grwtsk/medicine/issues/2)
+- [Synthetic communication acceptance v0.1](acceptance/communication-v0.1/specification.md): eight scenarios, six separate claims, 54 exact model/query pairs, and independently authored expectations.
 
 Current scenario work is synthetic. Authored requirements, computational checks, formal verification, professional review and permission to act are recorded separately. Classifier agreement does not by itself complete medical acceptance.
 
